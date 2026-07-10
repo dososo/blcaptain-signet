@@ -1,0 +1,239 @@
+schema_version: 3
+id: silk-fold
+english_name: Silk Fold
+chinese_name: 绸缎褶
+summary: 'A woven silk support style where soft cloth folds, directional yarn grain, and anisotropic fold sheen define the
+  icon.
+
+  '
+visual_dna:
+- woven silk cloth
+- directional fold grain
+- soft fold silhouette
+prompt_fragment: 'a woven silk Juju scarf-figure with soft cloth folds, directional yarn grain following each fold, satin
+  fold sheen held inside fabric planes, capable mascot silhouette, centered front or slight three-quarter icon.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI screenshots, busy backgrounds,
+  plastic shine, wet look, metal streak, carbon weave, hard machined edge, glass-like layer.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. warm white cloth body, orange scarf fold, and up to two muted fabric
+    colors.
+best_for:
+- fashion tools
+- calm premium apps
+- editorial icons
+- ceremony and gifting
+not_for:
+- industrial controls
+- blocky retro games
+- strict technical diagrams
+brand_adaptation_rules:
+- map brand color to one woven cloth fold
+- preserve orange scarf as the identity fold
+- keep fold direction consistent within a set
+example_subjects:
+- Juju silk fold figure
+- folded ribbon loop
+- cloth flower
+material_exclusivity:
+  exclusive_material: woven silk cloth with directional fold grain
+  material_family: silk-fold
+  allows_glass: false
+  light_model_enum: anisotropic-grain-streak
+  forbidden_finish:
+  - plastic shine
+  - wet look
+  - chrome streak
+  - carbon weave
+  - glossy clear coat
+  - glow
+  imperfection_injection: subtle yarn lines following fold direction and tiny fabric tension changes
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer rendered as a folded silk mascot
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass shaped by fabric folds
+  - short-leg small-dog proportion implied by folded cloth ends
+  - rounded curly-coat outer contour softened by fabric drape
+  face_geometry:
+    eye_nose_triangle: three embroidered dark knots in fixed triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact folded body, short legs
+    canonical_angle: front or slight 3/4 folded cloth pose
+  identity_marks:
+  - orange scarf as the dominant folded fabric band
+  identity_color:
+    coat: warm white silk body
+    accent: orange scarf fold
+    theme_color: muted fabric color
+    annotation: none
+  free_variables:
+  - fold direction
+  - pose
+  - fabric color
+  - small folded prop
+  action_vocabulary:
+  - pointing
+  - wrapping
+  - sorting-cards
+  - holding-note
+  articulation_joints:
+    deformable:
+    - neck-fold
+    - front-paw-fold
+    - tail-fold
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf fold identity
+  forbidden_drift:
+  - brushed-metal-scratch
+  - carbon-twill-weave
+  - plastic-shine
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - flat-ribbon-logo
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: woven silk cloth body
+    edge: soft folded fabric edge with slight thickness
+    inner_detail: yarn-direction lines and fold valleys
+    finish: satin cloth fold sheen contained by fabric planes
+  lighting_rig:
+    model_enum: anisotropic-grain-streak
+    key: broad soft directional light following fold direction
+    rim: none
+    shadow: gentle fold-valley shadow and soft contact shadow
+    forbidden_lighting:
+    - mirror reflection
+    - metal hotspot
+    - bloom
+    - hard rim
+    - wet surface shine
+  camera:
+    angle: front or slight 3/4 folded cloth view
+    projection: light perspective
+    crop: complete folded mascot silhouette
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: warm white woven cloth body
+    accent_role: orange scarf fold
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: soft folded Juju silhouette
+    mid: two or three major fold planes
+    micro: subtle yarn-direction streaks
+    legibility_floor_px: 32
+  edge_quality:
+    outline: soft folded cloth edge
+    interior_corner: fold valley with fabric thickness
+    terminal: tapered folded cloth end
+    bevel: cloth thickness only
+    anti_aliasing: soft fabric edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 18
+    corner_radius_px: 42
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: woven silk folded mascot
+  silhouette_rule: soft fold silhouette and yarn-direction streaks read at 64px
+  separation_matrix_neighbors:
+  - carbon-twill
+  - brushed-alloy
+  must_differ_from:
+  - id: carbon-twill
+    differ_on:
+    - edge
+    - grain
+    claim: soft fabric fold edge and flowing yarn grain, not diagonal 2/2 carbon twill weave
+  - id: brushed-alloy
+    differ_on:
+    - edge
+    - grain
+    claim: folded cloth edge and directional yarn sheen, not machined metal edge and straight abrasion grain
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no metal scratches
+  - no carbon weave
+  - no plastic shine
+  - no wet surface
+  - no flat ribbon logo
+  anti_taste_patterns:
+  - fold direction turns into brushed metal
+  - weave becomes carbon-fiber twill
+  - cloth becomes plastic ribbon
+  - folds become too thin to read at 64px
+  is_vs_is_not:
+    is: woven silk cloth with soft folds and directional yarn sheen
+    is_not: brushed alloy, carbon twill, plastic ribbon, glass layer
+  default_gloss_guard: if shine reads as plastic or metal, regenerate as woven cloth fold sheen
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: folded silhouette, scarf band, and eye-nose triangle survive without color
+  silhouette_test: black silhouette keeps ears, head, compact folded body, short legs, and scarf fold
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same front or slight 3/4 folded cloth view
+  lighting: same anisotropic fold direction and soft fold-valley shadow
+  material: same woven silk grain and fold thickness
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, folds not clipped
+  seed_policy: fixed yarn grain direction per fold family
+human_review_rubric:
+  silhouette_gate: pass if folded Juju reads at 64px
+  material_exclusivity_gate: pass if surface is woven cloth with fold-direction grain
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if Juju keeps embroidered eye-nose triangle and orange scarf fold
+  contrast_gate_ratio: scarf fold to body at least 3:1
+  drift_gate: fail metal scratches, carbon twill, wet plastic, flat ribbon logo, or missing folds
+  pass_fail_scoring: fail any hard gate before judging fabric elegance
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public textile fold and woven fabric principles only; do not copy any fashion object, prompt,
+    image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: silk-fold is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen fold planes and yarn-direction streaks
+  if_too_busy: reduce to three major folds and remove minor wrinkles
+  if_small_size_fails: enlarge fold silhouette and simplify yarn streaks
+  if_off_material: remove metal scratches, carbon weave, plastic shine, and wet surface
+  if_character_drift: keep drooping ear folds, short folded legs, eye-nose triangle, and orange scarf fold

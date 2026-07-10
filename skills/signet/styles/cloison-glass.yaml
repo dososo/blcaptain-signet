@@ -1,0 +1,238 @@
+schema_version: 3
+id: cloison-glass
+english_name: Cloison Glass
+chinese_name: 硬珐琅琉璃
+summary: 'Authorized glass slot one: a flush-level hard-enamel medallion with thin metal cloison lines, polished color cells,
+  and one controlled sweep highlight.
+
+  '
+visual_dna:
+- flush metal cloison cell skeleton
+- polished hard-enamel flat color fields
+- single controlled sweep highlight
+prompt_fragment: 'a cloisonne hard-enamel medallion with thin metal wire lines flush-level with polished enamel color fields,
+  one smooth plane, one controlled directional sweep highlight, orthographic front view.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI chrome or screenshots,
+  busy backgrounds, raised ridges, matte soft enamel, multi-layer depth, rainbow refraction, multiple scattered hotspots,
+  mirror chrome, gradient banding.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. one metal tone plus up to three polished enamel color fields; the
+    sweep highlight must not overpower color recognition.
+best_for:
+- premium medallions
+- membership and rank badges
+- jewelry and watch commerce icons
+- refined app icons
+not_for:
+- minimal linear tools
+- warm children's education products
+- dense system tray icons
+brand_adaptation_rules:
+- use brand primary as one polished enamel field
+- keep metal wire color constant across the set
+- allow exactly one controlled sweep highlight per icon
+example_subjects:
+- Juju commemorative medallion
+- rank badge
+- premium brand mark
+material_exclusivity:
+  exclusive_material: hard enamel polished flush with thin metal cloison lines
+  material_family: hard-enamel
+  allows_glass: true
+  light_model_enum: controlled-specular
+  forbidden_finish:
+  - bloom
+  - neon glow
+  - rim light
+  - rainbow refraction
+  - multi-hotspot mirror
+  imperfection_injection: flush metal cell boundaries with a single controlled sweep highlight only
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer and guide adapted as a hard-enamel medallion
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two dark enamel eye dots plus one dark nose cell in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: no extra catchlight beyond the single global sweep highlight
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front medallion view with subtle character pose cues
+  identity_marks:
+  - orange scarf as one flush enamel cell
+  identity_color:
+    coat: warm white enamel field
+    accent: orange scarf enamel field
+    theme_color: one polished enamel theme field
+    annotation: none
+  free_variables:
+  - pose simplified into cell geometry
+  - theme enamel color
+  - controlled sweep placement
+  - medallion outline
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-medallion
+  articulation_joints:
+    deformable:
+    - front-paw-point
+    - head-tilt
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf cell
+  forbidden_drift:
+  - raised-ridge-soft-enamel
+  - multi-layer-glass
+  - rainbow-refraction
+  - mirror-chrome
+  - generic-badge-animal
+  - missing-orange-scarf
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: metal base with flush cloison cell structure
+    edge: thin metal cloison lines level with the polished enamel plane
+    inner_detail: polished hard-enamel flat color fields, no within-field gradient
+    finish: one continuous polished enamel plane with a single controlled sweep highlight
+  lighting_rig:
+    model_enum: controlled-specular
+    key: single directional soft light creating one sweep highlight across the face
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - bloom
+    - neon glow
+    - rim light
+    - rainbow refraction
+    - multiple scattered hotspots
+  camera:
+    angle: straight-on medallion face
+    projection: orthographic
+    crop: complete medallion with outer wire visible
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: metal cloison skeleton defines structure
+    accent_role: polished enamel flat color fields
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: medallion outline plus cloison skeleton
+    mid: no more than three enamel color fields
+    micro: one sweep highlight
+    legibility_floor_px: 32
+  edge_quality:
+    outline: flush metal wire boundaries, not raised ridges
+    interior_corner: clean cell junctions
+    terminal: closed metal cell loops
+    bevel: none above color plane
+    anti_aliasing: crisp polished cell edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: flush polished hard-enamel medallion with metal cloison cells
+  silhouette_rule: badge outline plus flush metal cell skeleton; no raised ridge shadow
+  separation_matrix_neighbors:
+  - ridge-enamel
+  - prism-layer
+  must_differ_from:
+  - id: ridge-enamel
+    differ_on:
+    - edge
+    - grain
+    claim: flush wire and one sweep highlight, not raised metal ridge with recessed matte color
+  - id: prism-layer
+    differ_on:
+    - light_model
+    - edge
+    - grain
+    claim: single smooth hard-enamel plane, not separated translucent layers
+anti_style_drift:
+  banned_tokens: glass-safe
+  per_style_negatives:
+  - no raised ridges
+  - no multi-layer depth
+  - no rainbow refraction
+  - no scattered highlight field
+  - no mirror chrome
+  anti_taste_patterns:
+  - turns into soft enamel pin
+  - adds multi-layer glass depth
+  - sweep highlight breaks into many spots
+  - color fields get gradients
+  is_vs_is_not:
+    is: flush hard-enamel medallion with one controlled sweep highlight
+    is_not: raised soft-enamel badge, layered glass tile, mirror chrome object
+  default_gloss_guard: keep the sanctioned gloss as one sweep only; fail bloom, rainbow, rim, or multi-hotspot lighting
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: flush cloison skeleton and one sweep highlight remain readable without color
+  silhouette_test: badge outline and cell skeleton read, with no raised-ridge shadow dependency
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: straight-on orthographic medallion face
+  lighting: same controlled sweep angle across the set
+  material: same metal tone, same polished enamel plane, same flush wire width
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, at least 10% margin
+  seed_policy: fixed base seed, reuse sweep angle and cell density
+human_review_rubric:
+  silhouette_gate: pass if badge outline and cloison skeleton read at 64px grayscale
+  material_exclusivity_gate: pass if the surface is flush hard enamel, not raised ridge or layered glass
+  glass_budget_gate: allowed glass slot 1 only
+  character_identity_gate: pass if Juju eye-nose triangle and orange scarf cell survive
+  contrast_gate_ratio: adjacent color fields and metal wire remain at least 3:1 apart
+  drift_gate: fail if bloom, rainbow, rim light, or multi-hotspot polish appears
+  pass_fail_scoring: fail any hard gate before judging polish quality
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public cloisonne and hard-enamel principles only; do not copy any brand medallion, pattern, prompt,
+    image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: cloison-glass is an original Signet style id
+regeneration_strategy:
+  if_too_generic: restate single sweep highlight and flush metal cloison cells
+  if_too_busy: merge enamel cells and keep one highlight band
+  if_small_size_fails: remove the highlight first, thicken metal cell lines, preserve the skeleton
+  if_off_material: remove layers, raised ridges, rainbow, bloom, and mirror effects
+  if_character_drift: keep eye-nose triangle as independent dark cells and orange scarf as one enamel cell

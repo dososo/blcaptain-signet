@@ -1,0 +1,242 @@
+schema_version: 3
+id: sumi-bold
+english_name: Sumi Bold
+chinese_name: 浓墨重形
+tier: D
+recipe_alias: v4 sumi bold lane
+summary: Heavy sumi silhouette lane with dense black ink mass, dry-brush edge, enlarged red seal accent, and optional warm
+  rice-paper variant.
+visual_dna:
+- dense black ink mass
+- dry-brush edge
+- blank red seal accent
+prompt_fragment: a bold black sumi ink object with dense readable silhouette, dry-brush broken edge, controlled white paper
+  reserves, and one enlarged blank vermilion seal accent on a pure white or warm rice-paper master.
+negative_fragment: text, letters, logo, watermark, UI screenshot, gray muddy wash, decorative calligraphy characters, watercolor
+  flower background.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; colored ground is composed
+    downstream, not rendered into the white master.
+best_for:
+- high-impact monochrome app icons
+- editorial hero marks
+- cultural ink studies
+not_for:
+- candy color systems
+- realistic product render
+brand_adaptation_rules:
+- keep the material tell constant across the set
+- assign generated palette roles to subject parts, not random decoration
+- preserve Detail as the dark structure anchor
+example_subjects:
+- sumi camera
+- ink piggy bank
+- bold plant
+material_exclusivity:
+  exclusive_material: dense black sumi ink mass on absorbent paper
+  material_family: sumi-ink-bold
+  allows_glass: false
+  light_model_enum: none-flat
+  forbidden_finish:
+  - octane look
+  - generic glossy plastic
+  - uncontrolled bloom
+  - stock 3D icon
+  imperfection_injection: dry-brush bristle skips and uneven ink density
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer and guide adapted to the material lane
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: fixed catchlight only when the lane material permits it
+    expression_set:
+    - focused
+    - curious
+    - happy
+    - wow
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: slight 3/4 hero turn unless the lane is flat editorial
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated palette role on props or ground only
+  free_variables:
+  - pose
+  - expression
+  - camera crop
+  - selected lane material
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - peeking
+  - jumping
+  - thinking
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - generic plush toy
+  - missing-orange-scarf
+  - extra-limbs
+  - garbled-scarf-text
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: absorbent white or warm rice paper
+    edge: dry-brush black ink edge with broken bristles
+    inner_detail: large paper reserves and a blank vermilion seal accent
+    finish: matte absorbed ink, no shine
+  lighting_rig:
+    model_enum: none-flat
+    key: none-flat paper read
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - surface shine
+    - cast shadow
+    - glow
+  camera:
+    angle: straight-on or slight 3/4 product view
+    projection: orthographic icon product view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 3
+    primary_role: black ink mass remains dominant
+    accent_role: generated Tertiary or orange accent gives the pop
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: dark-anchor
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains downstream
+      tile
+  detail_budget:
+    macro: one dense black silhouette
+    mid: paper reserves for object identity
+    micro: one blank red seal only
+    legibility_floor_px: 24
+  edge_quality:
+    outline: rough dry-brush edge
+    interior_corner: ink pooling and broken bristle marks
+    terminal: brush lift-off
+    bevel: none
+    anti_aliasing: paper-absorbed edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+edge
+  namable_archetype: Heavy sumi silhouette lane with dense black ink mass, dry-brush edge, enlarged red seal accent, and optional
+    warm rice-paper variant
+  silhouette_rule: single centered object remains nameable before material effects
+  separation_matrix_neighbors:
+  - pomo-splash
+  - ink-wash
+  - brush-block
+  must_differ_from:
+  - id: pomo-splash
+    differ_on:
+    - edge
+    - grain
+    claim: solid sumi mass and red seal, not wet feathered wash with backrun rings
+  - id: ink-wash
+    differ_on:
+    - contrast
+    - grain
+    claim: high black mass, not soft tonal wash
+anti_style_drift:
+  banned_tokens: generic-ai-look
+  per_style_negatives:
+  - no octane render
+  - no stock 3D icon
+  - no random material mashup
+  - no text or fake logo
+  anti_taste_patterns:
+  - material tell collapses into generic AI plastic
+  - too many decorative fragments
+  - subject no longer nameable
+  is_vs_is_not:
+    is: bold absorbed sumi mass with dry-brush edge
+    is_not: wet watercolor scene, gray sketch, generic calligraphy
+  default_gloss_guard: if any gloss appears, regenerate as matte absorbed ink
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable without palette hue
+  silhouette_test: one dominant silhouette remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: reuse identical crop and optical scale across the set
+  lighting: reuse none-flat lane lighting and its bounded tell
+  material: reuse dense black sumi ink mass on absorbent paper
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed base seed with per-icon offset for hue rotation
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if the lane-specific material tell is visible and not replaced by generic AI plastic
+  glass_budget_gate: 'Phase B1: no numeric glass budget; any shine must be justified by the lane material tell and bounded
+    by anti-drift'
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if generic octane, stock 3D icon, uncontrolled bloom, or material tell collapse appears
+  pass_fail_scoring: fail any hard gate before judging beauty
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key or paper-clear in under one second
+reference_policy:
+  clean_room_boundary: learn public material principles only; no third-party names, prompts, images, compositions, icons,
+    or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: Signet v4 style id is original kebab-case naming
+regeneration_strategy:
+  if_too_generic: restate the lane material tell in concrete nouns before style adjectives
+  if_too_busy: remove decorative fragments and keep one centered object
+  if_small_size_fails: thicken silhouette, reduce micro detail, keep Detail anchor
+  if_off_material: remove generic AI plastic and restore exclusive material
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: dark-anchor
+  tile_generated_downstream: true
+v4_variants:
+  warm_variant: rice-paper ground, seal 8-12%, optional second warm accent

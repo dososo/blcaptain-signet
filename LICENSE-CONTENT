@@ -1,0 +1,7 @@
+Signet content license note
+
+The previous split-license note for style families and documentation is retired.
+
+The repository uses Apache-2.0 for code, documentation, style YAMLs, prompt templates, and supporting metadata.
+
+Generated icons and image-model outputs remain subject to the terms of the image model or production pipeline used to create them, plus any trademark or brand-clearance obligations of the user.

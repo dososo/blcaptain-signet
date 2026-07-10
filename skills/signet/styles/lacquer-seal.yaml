@@ -1,0 +1,239 @@
+schema_version: 3
+id: lacquer-seal
+english_name: Lacquer Seal
+chinese_name: 漆印
+summary: 'A carved opaque lacquer seal style where negative-space cuts and recessed groove shadows define the motif in a deep
+  matte-to-eggshell surface.
+
+  '
+visual_dna:
+- opaque deep lacquer block
+- carved seal knife-wall
+- recessed negative-space cut
+prompt_fragment: 'a carved lacquer seal with an opaque deep-red or deep-black lacquer block, intaglio motif cut into the surface,
+  negative-space figure read by recessed cut shadows, sharp knife-wall grooves, eggshell matte sheen, centered orthographic
+  front view.
+
+  '
+negative_fragment: 'text, readable characters, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI screenshots,
+  busy backgrounds, fake beveled 3D, floating drop shadow, rainbow color, plastic surface.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. one dominant deep lacquer color, one groove shadow value, and one
+    tiny gold or paper-white identity accent.
+best_for:
+- cultural and editorial brands
+- certification and credential tools
+- tea, wine, and gift packaging icons
+- private brand marks
+not_for:
+- engineering tools
+- children's entertainment
+- data dashboards
+brand_adaptation_rules:
+- use brand color only if it can become the single lacquer base color
+- keep accent under 8% area
+- preserve negative-space cut readability
+example_subjects:
+- square carved seal
+- lacquer credential token
+- carved Juju silhouette seal
+material_exclusivity:
+  exclusive_material: opaque deep-color lacquer with carved seal relief
+  material_family: carved-lacquer
+  allows_glass: false
+  light_model_enum: recessed-shadow
+  forbidden_finish:
+  - mirror gloss
+  - specular
+  - glow
+  - bloom
+  - rim light
+  - glass
+  - gel
+  imperfection_injection: eggshell lacquer unevenness, sharp knife-wall groove, recessed cut shadow
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer adapted as carved lacquer seal relief
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: three carved negative-space deep points in a fixed triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front seal silhouette
+  identity_marks:
+  - orange scarf translated into a tiny gold or warm accent groove
+  identity_color:
+    coat: negative-space cut in lacquer
+    accent: gold or warm orange scarf line
+    theme_color: one deep lacquer base color
+    annotation: none
+  free_variables:
+  - seal shape
+  - groove depth
+  - accent line
+  - negative-space motif
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-token
+  articulation_joints:
+    deformable:
+    - silhouette pose
+    - front-paw-point cut
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf accent
+  forbidden_drift:
+  - mirror-lacquer
+  - fake-3d-bevel
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - text-seal-character
+  - floating-sticker
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: opaque deep lacquer block, uniform and dense
+    edge: hard seal outer edge plus sharp carved knife-wall grooves
+    inner_detail: intaglio or relief motif using negative space and recessed groove shadow
+    finish: matte-to-eggshell lacquer sheen with subtle surface unevenness
+  lighting_rig:
+    model_enum: recessed-shadow
+    key: very soft top light revealing groove wall shadow only
+    rim: none
+    shadow: recessed cut shadow inside carved grooves, optional faint contact shadow
+    forbidden_lighting:
+    - mirror reflection
+    - external glow
+    - bloom
+    - rim light
+    - fake bevel highlight
+  camera:
+    angle: straight-on front view
+    projection: near-orthographic
+    crop: centered square or round seal with border margin
+    safe_area_pct: 78
+  color_system:
+    max_colors: 3
+    primary_role: deep lacquer base
+    accent_role: tiny gold or paper-white identity accent
+    contrast_rule_ratio: '4:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: one solid lacquer seal shape
+    mid: one primary negative-space motif
+    micro: recessed groove shadow and eggshell unevenness
+    legibility_floor_px: 24
+  edge_quality:
+    outline: clean hard seal border
+    interior_corner: sharp carved knife-wall
+    terminal: cut groove ends with recessed shadow
+    bevel: cut into surface, not raised bevel
+    anti_aliasing: crisp lacquer cut edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 800
+    padding_px: 112
+    stroke_px: 16
+    corner_radius_px: 28
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: carved opaque lacquer seal
+  silhouette_rule: solid lacquer block with cut negative-space motif reads at 64px
+  separation_matrix_neighbors:
+  - press-relief
+  - ridge-enamel
+  must_differ_from:
+  - id: press-relief
+    differ_on:
+    - edge
+    - grain
+    claim: sharp lacquer knife-wall and deep opaque base, not soft cotton-paper deboss well
+  - id: ridge-enamel
+    differ_on:
+    - light_model
+    - grain
+    claim: carved lacquer negative space, not raised metal ridges around enamel cells
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no mirror surface
+  - no fake 3D bevel
+  - no external glow
+  - no readable seal characters
+  - no floating sticker shadow
+  anti_taste_patterns:
+  - lacquer becomes mirror plastic
+  - cut grooves become bevelled render
+  - motif is too thin for small size
+  - palette becomes decorative and noisy
+  is_vs_is_not:
+    is: opaque carved lacquer seal with recessed negative-space cuts
+    is_not: plastic badge, glass token, text stamp, floating sticker
+  default_gloss_guard: keep lacquer to eggshell surface only; regenerate if mirror reflection or external glow appears
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: solid seal and cut negative-space motif remain readable without color
+  silhouette_test: primary cut motif survives after micro grooves are removed
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: fixed front orthographic seal view
+  lighting: same soft recessed-shadow direction inside cuts
+  material: same lacquer base, eggshell surface, and groove depth
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 78%, border preserved
+  seed_policy: fixed groove feel and eggshell unevenness
+human_review_rubric:
+  silhouette_gate: pass if seal block and negative-space motif read at 64px
+  material_exclusivity_gate: pass if material is opaque carved lacquer
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if Juju eye-nose triangle and scarf accent survive in the cut motif
+  contrast_gate_ratio: negative space to lacquer at least 4:1
+  drift_gate: fail mirror plastic, fake bevel, readable text, or sticker shadow
+  pass_fail_scoring: fail any hard gate before judging cultural tone
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public lacquer and seal-carving principles only; do not copy any stamp, character, lacquer artwork,
+    prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: lacquer-seal is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen seal border, negative-space motif, and cut groove shadow
+  if_too_busy: simplify to one main cut motif and remove secondary grooves
+  if_small_size_fails: widen grooves, remove micro cuts, keep main silhouette
+  if_off_material: remove mirror surface, fake bevel, external glow, and floating shadow
+  if_character_drift: carve Juju silhouette with three negative-space face points and warm scarf accent

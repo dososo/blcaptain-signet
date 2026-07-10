@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signet WS-3 参数化 Glyph 预览</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --panel: #fffdfa;
+      --ink: #17130f;
+      --muted: #6b6258;
+      --line: #d8d0c5;
+      --glyph-color: #17130f;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); }
+    main { width: min(1120px, calc(100vw - 32px)); margin: 0 auto; padding: 32px 0 40px; }
+    header { display: flex; justify-content: space-between; gap: 24px; align-items: end; border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 20px; }
+    h1 { margin: 0 0 8px; font-size: 24px; line-height: 1.15; font-weight: 720; letter-spacing: 0; }
+    p { margin: 0; max-width: 680px; color: var(--muted); line-height: 1.55; font-size: 14px; }
+    .palette { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; min-width: 220px; }
+    .swatch { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); cursor: pointer; box-shadow: inset 0 0 0 3px var(--panel); }
+    .grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; color: var(--glyph-color); }
+    .glyph-card { min-height: 116px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 12px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+    .glyph-meta { display: flex; justify-content: space-between; gap: 12px; align-items: center; color: var(--ink); font-size: 13px; line-height: 1.25; }
+    code { color: var(--muted); font-size: 11px; white-space: nowrap; }
+    .glyph-row { display: flex; align-items: center; justify-content: space-between; min-height: 48px; }
+    .glyph-24, .glyph-16 { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 8px; background: #f1ece4; }
+    .glyph-24 svg { width: 24px; height: 24px; display: block; }
+    .glyph-16 svg { width: 16px; height: 16px; display: block; }
+    .glyph-card svg * { vector-effect: non-scaling-stroke; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { header { align-items: start; flex-direction: column; } .palette { justify-content: flex-start; min-width: 0; } .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Signet 参数化 glyph 集</h1>
+        <p>22 个 Signet 自制 SVG glyph，共享 24x24 网格、2px 描边、圆端点/圆拐角和 currentColor 换色。</p>
+      </div>
+      <nav class="palette" aria-label="调色">
+        <button class="swatch" type="button" style="background:#17130f" data-color="#17130f" aria-label="墨色"></button>
+        <button class="swatch" type="button" style="background:#0f766e" data-color="#0f766e" aria-label="青绿"></button>
+        <button class="swatch" type="button" style="background:#9a3430" data-color="#9a3430" aria-label="赤陶"></button>
+      </nav>
+    </header>
+    <section class="grid" aria-label="参数化 glyph 预览">
+
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Signet seal</span>
+          <code>signet-seal</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--signet-seal" role="img" aria-label="Signet custom Signet seal"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 9 10.5 L 12 7.5 L 15 10.5 L 15 14 L 12 16.5 L 9 14 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10.5" y1="12" x2="13.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--signet-seal" role="img" aria-label="Signet custom Signet seal"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 9 10.5 L 12 7.5 L 15 10.5 L 15 14 L 12 16.5 L 9 14 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10.5" y1="12" x2="13.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Material swatch</span>
+          <code>material-swatch</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--material-swatch" role="img" aria-label="Signet custom Material swatch"><rect x="4.5" y="5.5" width="12" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="10" x2="13" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="13" x2="11.5" y2="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16.5" y1="9" x2="19.5" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16.5" y1="15" x2="19.5" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--material-swatch" role="img" aria-label="Signet custom Material swatch"><rect x="4.5" y="5.5" width="12" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="10" x2="13" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="13" x2="11.5" y2="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16.5" y1="9" x2="19.5" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16.5" y1="15" x2="19.5" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Palette 5-role</span>
+          <code>palette-5role</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--palette-5role" role="img" aria-label="Signet custom Palette 5-role"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="7.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="16" cy="10.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="14.5" cy="15.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.5" cy="15.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="8" cy="10.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="12" x2="12" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--palette-5role" role="img" aria-label="Signet custom Palette 5-role"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="7.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="16" cy="10.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="14.5" cy="15.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.5" cy="15.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="8" cy="10.5" r="1.15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="12" x2="12" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Tier D badge</span>
+          <code>tier-d-badge</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--tier-d-badge" role="img" aria-label="Signet custom Tier D badge"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 12 6.5 L 15 12 L 12 17.5 L 9 12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="6.5" y1="12" x2="8.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15.5" y1="12" x2="17.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--tier-d-badge" role="img" aria-label="Signet custom Tier D badge"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 12 6.5 L 15 12 L 12 17.5 L 9 12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="6.5" y1="12" x2="8.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15.5" y1="12" x2="17.5" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Tier E badge</span>
+          <code>tier-e-badge</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--tier-e-badge" role="img" aria-label="Signet custom Tier E badge"><path d="M 8 5.5 H 16 L 19 9 V 15 L 16 18.5 H 8 L 5 15 V 9 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="10" x2="15" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="14" x2="15" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--tier-e-badge" role="img" aria-label="Signet custom Tier E badge"><path d="M 8 5.5 H 16 L 19 9 V 15 L 16 18.5 H 8 L 5 15 V 9 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="10" x2="15" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="14" x2="15" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>iOS platform mark</span>
+          <code>platform-ios</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-ios" role="img" aria-label="Signet custom iOS platform mark"><rect x="7" y="3.5" width="10" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10.5" y1="17.5" x2="13.5" y2="17.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="6.5" r="0.65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-ios" role="img" aria-label="Signet custom iOS platform mark"><rect x="7" y="3.5" width="10" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10.5" y1="17.5" x2="13.5" y2="17.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="6.5" r="0.65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Android platform mark</span>
+          <code>platform-android</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-android" role="img" aria-label="Signet custom Android platform mark"><path d="M 6.11 9.25 A 6.5 6.5 0 0 1 17.89 9.25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="7.5" x2="6.5" y2="5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16" y1="7.5" x2="17.5" y2="5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="12" x2="7" y2="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="17" y1="12" x2="17" y2="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="18.5" x2="9" y2="20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15" y1="18.5" x2="15" y2="20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.7" cy="11" r="0.45" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="14.3" cy="11" r="0.45" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-android" role="img" aria-label="Signet custom Android platform mark"><path d="M 6.11 9.25 A 6.5 6.5 0 0 1 17.89 9.25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="7.5" x2="6.5" y2="5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="16" y1="7.5" x2="17.5" y2="5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="12" x2="7" y2="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="17" y1="12" x2="17" y2="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="18.5" x2="9" y2="20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15" y1="18.5" x2="15" y2="20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.7" cy="11" r="0.45" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="14.3" cy="11" r="0.45" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>HarmonyOS platform mark</span>
+          <code>platform-harmonyos</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-harmonyos" role="img" aria-label="Signet custom HarmonyOS platform mark"><path d="M 18.8 15.17 A 7.5 7.5 0 0 1 5.2 8.83" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 7.92 10.1 A 4.5 4.5 0 0 1 16.08 13.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="12" r="1.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-harmonyos" role="img" aria-label="Signet custom HarmonyOS platform mark"><path d="M 18.8 15.17 A 7.5 7.5 0 0 1 5.2 8.83" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 7.92 10.1 A 4.5 4.5 0 0 1 16.08 13.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="12" r="1.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Web platform mark</span>
+          <code>platform-web</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-web" role="img" aria-label="Signet custom Web platform mark"><rect x="4" y="5" width="16" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="9" x2="20" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="7" cy="7" r="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.5" cy="7" r="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-web" role="img" aria-label="Signet custom Web platform mark"><rect x="4" y="5" width="16" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="9" x2="20" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="7" cy="7" r="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.5" cy="7" r="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>PWA platform mark</span>
+          <code>platform-pwa</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-pwa" role="img" aria-label="Signet custom PWA platform mark"><rect x="5" y="5" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="8,15 10.5,9 13,15 15.5,9 17,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-pwa" role="img" aria-label="Signet custom PWA platform mark"><rect x="5" y="5" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="8,15 10.5,9 13,15 15.5,9 17,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>macOS platform mark</span>
+          <code>platform-macos</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-macos" role="img" aria-label="Signet custom macOS platform mark"><rect x="4" y="6" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="20" x2="15" y2="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="17" x2="12" y2="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="9" x2="16" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-macos" role="img" aria-label="Signet custom macOS platform mark"><rect x="4" y="6" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="20" x2="15" y2="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="17" x2="12" y2="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="8" y1="9" x2="16" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>tvOS platform mark</span>
+          <code>platform-tvos</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-tvos" role="img" aria-label="Signet custom tvOS platform mark"><rect x="4" y="7" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="19" x2="15" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="10" x2="11" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="11" y1="10" x2="7" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="13" y1="10" x2="17" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15" y1="10" x2="15" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--platform-tvos" role="img" aria-label="Signet custom tvOS platform mark"><rect x="4" y="7" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="9" y1="19" x2="15" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="10" x2="11" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="11" y1="10" x2="7" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="13" y1="10" x2="17" y2="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="15" y1="10" x2="15" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Export zip</span>
+          <code>export-zip</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--export-zip" role="img" aria-label="Signet custom Export zip"><path d="M 7 4 H 14 L 18 8 V 20 H 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="14,4 14,8 18,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10" y1="6.5" x2="10" y2="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="8" x2="12" y2="9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10" y1="9.5" x2="10" y2="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="9" y="13.5" width="4" height="3.5" rx="1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--export-zip" role="img" aria-label="Signet custom Export zip"><path d="M 7 4 H 14 L 18 8 V 20 H 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="14,4 14,8 18,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10" y1="6.5" x2="10" y2="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="8" x2="12" y2="9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="10" y1="9.5" x2="10" y2="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="9" y="13.5" width="4" height="3.5" rx="1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Squircle tile</span>
+          <code>squircle-tile</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--squircle-tile" role="img" aria-label="Signet custom Squircle tile"><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="8" y="8" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="5" x2="12" y2="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="16" x2="12" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--squircle-tile" role="img" aria-label="Signet custom Squircle tile"><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="8" y="8" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="5" x2="12" y2="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="12" y1="16" x2="12" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Battery charging</span>
+          <code>battery-charging</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--battery-charging" role="img" aria-label="Signet custom Battery charging"><rect x="3" y="7" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="21" y1="10" x2="21" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 12.5 8.5 L 8.5 13 H 11.5 L 10.5 16 L 15.5 11.5 H 12.5 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--battery-charging" role="img" aria-label="Signet custom Battery charging"><rect x="3" y="7" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="21" y1="10" x2="21" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 12.5 8.5 L 8.5 13 H 11.5 L 10.5 16 L 15.5 11.5 H 12.5 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>QR code</span>
+          <code>qr-code</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--qr-code" role="img" aria-label="Signet custom QR code"><rect x="4" y="4" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="15" y="4" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="4" y="15" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="12" y="12" width="3" height="3" rx="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="18" y1="12" x2="20" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="18" y1="12" x2="18" y2="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="12,18 15,18 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="18,18 20,18 20,20 18,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--qr-code" role="img" aria-label="Signet custom QR code"><rect x="4" y="4" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="15" y="4" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="4" y="15" width="5" height="5" rx="0.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><rect x="12" y="12" width="3" height="3" rx="0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="18" y1="12" x2="20" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="18" y1="12" x2="18" y2="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="12,18 15,18 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="18,18 20,18 20,20 18,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Undo</span>
+          <code>undo</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--undo" role="img" aria-label="Signet custom Undo"><polyline points="9,7 5,11 9,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 6 11 H 13.5 C 17 11 19 13 19 16.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--undo" role="img" aria-label="Signet custom Undo"><polyline points="9,7 5,11 9,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 6 11 H 13.5 C 17 11 19 13 19 16.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Redo</span>
+          <code>redo</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--redo" role="img" aria-label="Signet custom Redo"><polyline points="15,7 19,11 15,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 18 11 H 10.5 C 7 11 5 13 5 16.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--redo" role="img" aria-label="Signet custom Redo"><polyline points="15,7 19,11 15,15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 18 11 H 10.5 C 7 11 5 13 5 16.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Scan</span>
+          <code>scan</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--scan" role="img" aria-label="Signet custom Scan"><polyline points="9,4 4,4 4,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="15,4 20,4 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 4,20 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 20,20 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="12" x2="17" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--scan" role="img" aria-label="Signet custom Scan"><polyline points="9,4 4,4 4,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="15,4 20,4 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 4,20 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 20,20 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="7" y1="12" x2="17" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Horizontal sliders</span>
+          <code>sliders-horizontal</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--sliders-horizontal" role="img" aria-label="Signet custom Horizontal sliders"><line x1="4" y1="6" x2="20" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="12" x2="20" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="15" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="18" x2="20" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="11" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--sliders-horizontal" role="img" aria-label="Signet custom Horizontal sliders"><line x1="4" y1="6" x2="20" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="12" x2="20" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="15" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><line x1="4" y1="18" x2="20" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><circle cx="11" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Maximize</span>
+          <code>maximize</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--maximize" role="img" aria-label="Signet custom Maximize"><polyline points="9,4 4,4 4,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="15,4 20,4 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 4,20 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 20,20 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--maximize" role="img" aria-label="Signet custom Maximize"><polyline points="9,4 4,4 4,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="15,4 20,4 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 4,20 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 20,20 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+      <article class="glyph-card">
+        <div class="glyph-meta">
+          <span>Minimize</span>
+          <code>minimize</code>
+        </div>
+        <div class="glyph-row">
+          <div class="glyph-24"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--minimize" role="img" aria-label="Signet custom Minimize"><polyline points="4,9 9,9 9,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,9 15,9 15,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 9,15 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 15,15 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <div class="glyph-16"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signet-ui-glyph signet-ui-glyph--minimize" role="img" aria-label="Signet custom Minimize"><polyline points="4,9 9,9 9,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,9 15,9 15,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="4,15 9,15 9,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><polyline points="20,15 15,15 15,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script>
+    const root = document.documentElement;
+    document.querySelectorAll("[data-color]").forEach((button) => {
+      button.addEventListener("click", () => root.style.setProperty("--glyph-color", button.dataset.color));
+    });
+  </script>
+</body>
+</html>

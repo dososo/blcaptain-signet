@@ -1,0 +1,16 @@
+project_name: FlowPilot
+asset_type: app_icon
+icon_subject: calm AI workflow autopilot
+brand_words: [calm, precise, intelligent]
+audience: indie SaaS founders
+platforms: [web, ios, android, pwa]
+style_family: prism-gel
+style_mix:
+  primary: prism-gel
+  secondary: blueprint-grid
+  ratio: 80/20
+color_palette:
+  primary: "#6D7CFF"
+  secondary: "#8BE9D4"
+  accent: "#FFD166"
+  background: transparent

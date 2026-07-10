@@ -1,0 +1,242 @@
+schema_version: 3
+id: contour-single
+english_name: Contour Single
+chinese_name: 单线等高
+tier: E
+recipe_alias: v4 contour single lane
+summary: Editorial contour lane with one continuous equal-weight contour path, nested topographic hints, and off-white paper
+  ground.
+visual_dna:
+- single continuous line
+- equal contour weight
+- off-white paper ground
+prompt_fragment: a single-line contour editorial object drawn as one continuous equal-weight path with sparse nested topographic
+  hints on off-white paper.
+negative_fragment: text, logo, watermark, UI screenshot, 3D render, dense map, gradient fill, glossy surface.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to soft; colored ground is composed
+    downstream, not rendered into the white master.
+best_for:
+- technical explainers
+- empty-state spot illustrations
+- quiet Juju diagrams
+not_for:
+- high-pop app icon default
+- material showcase
+brand_adaptation_rules:
+- keep the material tell constant across the set
+- assign generated palette roles to subject parts, not random decoration
+- preserve Detail as the dark structure anchor
+example_subjects:
+- single-line workflow
+- Juju path diagram
+- contour archive box
+material_exclusivity:
+  exclusive_material: single continuous contour line on off-white paper
+  material_family: single-contour-paper
+  allows_glass: false
+  light_model_enum: none-flat
+  forbidden_finish:
+  - octane look
+  - generic glossy plastic
+  - uncontrolled bloom
+  - stock 3D icon
+  imperfection_injection: subtle hand wobble at long path turns
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer and guide adapted to the material lane
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: fixed catchlight only when the lane material permits it
+    expression_set:
+    - focused
+    - curious
+    - happy
+    - wow
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: slight 3/4 hero turn unless the lane is flat editorial
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated palette role on props or ground only
+  free_variables:
+  - pose
+  - expression
+  - camera crop
+  - selected lane material
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - peeking
+  - jumping
+  - thinking
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - generic plush toy
+  - missing-orange-scarf
+  - extra-limbs
+  - garbled-scarf-text
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: off-white matte paper
+    edge: one continuous equal-weight contour path
+    inner_detail: sparse nested contour hints only
+    finish: dry ink line, no fill
+  lighting_rig:
+    model_enum: none-flat
+    key: none-flat paper read
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - 3D render
+    - cast shadow
+    - gloss
+  camera:
+    angle: straight-on or slight 3/4 product view
+    projection: orthographic icon product view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 82
+  color_system:
+    max_colors: 2
+    primary_role: generated Primary carries main body
+    accent_role: generated Tertiary or orange accent gives the pop
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: soft
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: cream-tint
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains downstream
+      tile
+  detail_budget:
+    macro: one continuous outline
+    mid: two nested contour hints
+    micro: none
+    legibility_floor_px: 48
+  edge_quality:
+    outline: single continuous line
+    interior_corner: smooth contour turn
+    terminal: hidden or closed line ending
+    bevel: none
+    anti_aliasing: clean dry line
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+edge
+  namable_archetype: Editorial contour lane with one continuous equal-weight contour path, nested topographic hints, and off-white
+    paper ground
+  silhouette_rule: single centered object remains nameable before material effects
+  separation_matrix_neighbors:
+  - contour-map
+  - draft-line
+  - cyan-draft
+  must_differ_from:
+  - id: contour-map
+    differ_on:
+    - composition
+    - density
+    claim: single editorial path, not dense map-field icon texture
+  - id: draft-line
+    differ_on:
+    - edge
+    - grain
+    claim: equal contour path, not pressure-varied sketch line
+anti_style_drift:
+  banned_tokens: generic-ai-look
+  per_style_negatives:
+  - no octane render
+  - no stock 3D icon
+  - no random material mashup
+  - no text or fake logo
+  anti_taste_patterns:
+  - material tell collapses into generic AI plastic
+  - too many decorative fragments
+  - subject no longer nameable
+  is_vs_is_not:
+    is: single continuous contour drawing
+    is_not: map screenshot, vector logo, 3D icon
+  default_gloss_guard: if shine appears, regenerate as dry single-line ink
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable without palette hue
+  silhouette_test: one dominant silhouette remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: reuse identical crop and optical scale across the set
+  lighting: reuse none-flat lane lighting and its bounded tell
+  material: reuse single continuous contour line on off-white paper
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed base seed with per-icon offset for hue rotation
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if the lane-specific material tell is visible and not replaced by generic AI plastic
+  glass_budget_gate: 'Phase B1: no numeric glass budget; any shine must be justified by the lane material tell and bounded
+    by anti-drift'
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if generic octane, stock 3D icon, uncontrolled bloom, or material tell collapse appears
+  pass_fail_scoring: fail any hard gate before judging beauty
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key or paper-clear in under one second
+reference_policy:
+  clean_room_boundary: learn public material principles only; no third-party names, prompts, images, compositions, icons,
+    or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: Signet v4 style id is original kebab-case naming
+regeneration_strategy:
+  if_too_generic: restate the lane material tell in concrete nouns before style adjectives
+  if_too_busy: remove decorative fragments and keep one centered object
+  if_small_size_fails: thicken silhouette, reduce micro detail, keep Detail anchor
+  if_off_material: remove generic AI plastic and restore exclusive material
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: cream-tint
+  tile_generated_downstream: true
+asset_type_defaults:
+- editorial
+- editorial_scene

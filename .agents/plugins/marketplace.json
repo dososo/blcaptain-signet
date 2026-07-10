@@ -1,0 +1,12 @@
+{
+  "name": "signet-local",
+  "interface": { "displayName": "Signet" },
+  "plugins": [
+    {
+      "name": "signet-icon-system",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Design"
+    }
+  ]
+}

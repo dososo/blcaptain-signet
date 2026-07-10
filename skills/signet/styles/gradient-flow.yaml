@@ -1,0 +1,243 @@
+schema_version: 3
+id: gradient-flow
+english_name: Gradient Flow
+chinese_name: 渐变扁平
+tier: E
+recipe_alias: gradient flat lane
+summary: Flat icon lane with broad rounded geometry, restrained directional gradients, and no dimensional lighting.
+visual_dna:
+- restrained directional gradient
+- broad rounded color fields
+- flat app-icon silhouette
+prompt_fragment: a flat icon object built from broad rounded geometric color fields, with a restrained directional gradient
+  across two or three related hues, large matte shapes, clean negative space, and one centered readable subject.
+negative_fragment: text, logo, watermark, UI screenshot, Corporate Memphis flat people, generic glossy 3D, muddy midpoint
+  gradients, bevel, drop shadow, plastic shine.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; gradient stops use related
+    roles from the subject palette, while the ground stays white or downstream tile only.
+best_for:
+- modern app icons
+- energetic product marks
+- universal metaphor objects
+not_for:
+- craft-material showcase
+- editorial line diagrams
+- character-heavy scenes
+brand_adaptation_rules:
+- keep the subject to one focal object or metaphor
+- let the gradient live inside large subject shapes only
+- avoid decorative background gradients
+example_subjects:
+- flowing folder mark
+- rounded compass pointer
+- abstract upload object
+material_exclusivity:
+  exclusive_material: flat vector color fields with restrained in-shape gradient
+  material_family: gradient-flat-vector
+  allows_glass: false
+  light_model_enum: none-flat
+  forbidden_finish:
+  - Corporate Memphis flat people
+  - generic glossy 3D
+  - bevel
+  - cast shadow
+  - plastic shine
+  imperfection_injection: slight directional color drift inside a single broad shape, never surface lighting
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer adapted only when a flat object metaphor needs a tiny guide figure
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front or slight 3/4 flat silhouette
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated palette role on props only
+  free_variables:
+  - pose
+  - expression
+  - gradient direction
+  - subject crop
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - flat-human-mascot
+  - missing-orange-scarf
+  - extra-limbs
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: matte flat vector plane
+    edge: broad rounded geometric boundary
+    inner_detail: restrained directional gradient locked inside large subject fields
+    finish: flat color surface without lighting effects
+  lighting_rig:
+    model_enum: none-flat
+    key: none-flat color read
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - bevel highlight
+    - cast shadow
+    - rim light
+    - surface shine
+  camera:
+    angle: straight-on or slight 3/4 icon view
+    projection: orthographic flat icon view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 3
+    primary_role: generated Primary and Secondary form a related directional transition
+    accent_role: generated Tertiary may mark one small functional feature
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: pale-primary-tint
+    subject_carried_roles: primary/secondary/tertiary/detail are assigned to subject parts; ground remains white or downstream
+      tile
+  detail_budget:
+    macro: one bold rounded silhouette
+    mid: one internal gradient direction and one secondary shape
+    micro: no texture; one tiny cutout or detail mark only
+    legibility_floor_px: 24
+  edge_quality:
+    outline: smooth rounded vector edge
+    interior_corner: rounded junction between large fields
+    terminal: clean flat cap
+    bevel: none
+    anti_aliasing: crisp flat edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 20
+    corner_radius_px: 72
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: color-transition+edge
+  namable_archetype: rounded flat icon with restrained in-shape gradient flow
+  silhouette_rule: single centered object remains nameable before gradient color is considered
+  separation_matrix_neighbors:
+  - duotone-pop
+  - geo-bauhaus
+  - candy-gloss
+  must_differ_from:
+  - id: duotone-pop
+    differ_on:
+    - color_system
+    - surface
+    claim: related directional transition across broad fields, not two flat color plates with transparency steps
+  - id: geo-bauhaus
+    differ_on:
+    - geometry
+    - composition
+    claim: rounded flowing fields, not primary-color circle triangle square construction
+  - id: candy-gloss
+    differ_on:
+    - light_model
+    - finish
+    claim: none-flat matte vector transition, not shiny candy body or controlled specular surface
+anti_style_drift:
+  banned_tokens: flat-style-ban
+  per_style_negatives:
+  - no Corporate Memphis flat people
+  - no generic glossy 3D
+  - no muddy midpoint gradient
+  - no bevel or cast shadow
+  - no decorative background gradient
+  anti_taste_patterns:
+  - gradient becomes a fake lighting effect
+  - subject loses nameability behind color flow
+  - rounded fields become bland corporate blobs
+  - too many hues create dirty middle bands
+  is_vs_is_not:
+    is: flat rounded object with controlled in-shape gradient direction
+    is_not: glossy render, corporate flat illustration, abstract wallpaper
+  default_gloss_guard: if shine, bevel, or depth appears, regenerate as matte flat vector color fields
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable after gradient hue is removed
+  silhouette_test: one bold rounded silhouette reads at 64px before color is considered
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: fixed orthographic flat icon crop
+  lighting: none-flat, no shadow or rim light
+  material: reuse broad matte vector fields with restrained in-shape gradient
+  palette: reuse palette_family and related-hue transition policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed base seed with per-icon hue offset only
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if it remains matte flat vector color, not dimensional render material
+  glass_budget_gate: must remain non-glass and none-flat
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if gradient becomes lighting, decorative wallpaper, or corporate flat people
+  pass_fail_scoring: fail any hard gate before judging color appeal
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, flat color appeal in under one second
+reference_policy:
+  clean_room_boundary: learn public gradient icon category principles only; no third-party names, prompts, images, compositions,
+    icons, or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: gradient-flow is an original Signet style id
+regeneration_strategy:
+  if_too_generic: restate one focal object, broad rounded fields, and restrained directional transition
+  if_too_busy: remove extra color stops and keep one main shape plus one detail
+  if_small_size_fails: thicken silhouette and remove internal micro detail
+  if_off_material: remove gloss, bevel, shadow, and rendered depth
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: pale-primary-tint
+  tile_generated_downstream: true
+asset_type_defaults:
+- app_icon
+- feature_icon

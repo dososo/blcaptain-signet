@@ -1,0 +1,12 @@
+project_name: LedgerFox
+asset_type: app_icon
+icon_subject: secure personal finance vault
+brand_words: [trustworthy, premium, calm]
+audience: professionals
+platforms: [ios, web]
+style_family: jade-lens
+color_palette:
+  primary: "#1F6F5C"
+  secondary: "#0E1116"
+  accent: "#D4AF37"
+  background: solid

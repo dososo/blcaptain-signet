@@ -1,0 +1,244 @@
+schema_version: 3
+id: cyan-draft
+english_name: Cyan Draft
+chinese_name: 蓝图
+summary: 'A technical blueprint style with constant white drafting lines, dimension grammar, and matte Prussian-blue ground.
+
+  '
+visual_dna:
+- white technical line on blue ground
+- dimension ticks and leader marks
+- orthographic drafting grammar
+prompt_fragment: 'an engineering blueprint icon with white constant-weight technical lines on uniform Prussian-blue matte
+  ground, orthographic projection, dimension arrows, leader lines, center-cross marks, and one warm accent mark.
+
+  '
+negative_fragment: 'text, readable labels, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI screenshots,
+  busy backgrounds, hand-drawn wobble, variable line weight, illustration shading, soft edge.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. Prussian-blue ground plus white or pale-cyan linework; one warm
+    accent may mark a key dimension.
+best_for:
+- engineering and CAD tools
+- developer infrastructure products
+- hardware and IoT apps
+- measurement and specification tools
+not_for:
+- children's entertainment
+- food and lifestyle products
+- handmade warmth brands
+brand_adaptation_rules:
+- keep blue ground and white line contrast locked
+- use brand accent only for one key dimension mark
+- remove label text at small sizes, keep symbolic ticks
+example_subjects:
+- gear orthographic view
+- house section blueprint
+- Juju structure diagram
+material_exclusivity:
+  exclusive_material: white technical line on matte Prussian-blue blueprint ground
+  material_family: blueprint-line
+  allows_glass: false
+  light_model_enum: none-flat
+  forbidden_finish:
+  - glow
+  - luminous
+  - neon
+  - emissive line
+  - specular
+  - gloss
+  - glass
+  imperfection_injection: precise dimension ticks, leader lines, center marks, and uniform blue-ground paper
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer translated into a technical structure diagram
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: three protected white or dark blueprint marks in fixed triangle geometry
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: orthographic structure view
+  identity_marks:
+  - orange scarf as one warm accent line or outlined band
+  identity_color:
+    coat: blueprint line silhouette
+    accent: orange scarf annotation line
+    theme_color: Prussian blue ground
+    annotation: one warm technical mark
+  free_variables:
+  - projection view
+  - leader lines
+  - accent annotation
+  - diagram crop
+  action_vocabulary:
+  - pointing
+  - circling-keywords
+  - sorting-cards
+  articulation_joints:
+    deformable:
+    - diagram pose
+    - front-paw-point line
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf outline
+  forbidden_drift:
+  - hand-drawn-wobble
+  - neon-line
+  - missing-dimension-grammar
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - rendered-volume
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: uniform matte Prussian-blue blueprint ground
+    edge: constant-width white or pale-cyan technical drafting line
+    inner_detail: dimension arrows, leader lines, center crosses, section hatching, and tick marks
+    finish: flat blueprint paper surface
+  lighting_rig:
+    model_enum: none-flat
+    key: none, line-ground contrast carries the form
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - glowing line
+    - soft halo
+    - surface shine
+    - bloom
+    - dimensional shading
+  camera:
+    angle: orthographic front, top, or side projection
+    projection: orthographic
+    crop: centered view with annotation space
+    safe_area_pct: 78
+  color_system:
+    max_colors: 3
+    primary_role: blue ground and white line create the drawing
+    accent_role: one warm accent for a key dimension or scarf mark
+    contrast_rule_ratio: 4.5:1
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: main line-frame silhouette
+    mid: two to four drafting annotations
+    micro: arrowheads, ticks, center marks, and section hatching
+    legibility_floor_px: 24
+  edge_quality:
+    outline: constant-width precise drafting line
+    interior_corner: crisp technical intersection
+    terminal: arrowhead, tick, or drafting extension
+    bevel: none
+    anti_aliasing: clean flat line edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 800
+    padding_px: 112
+    stroke_px: 12
+    corner_radius_px: 0
+    min_gap_px: 20
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: white technical blueprint line on Prussian-blue ground
+  silhouette_rule: line-frame subject and at least one dimension cue read at 64px
+  separation_matrix_neighbors:
+  - draft-line
+  - carve-block
+  - riso-grain
+  must_differ_from:
+  - id: draft-line
+    differ_on:
+    - edge
+    - grain
+    claim: constant technical line and blue ground, not variable hand sketch on white paper
+  - id: carve-block
+    differ_on:
+    - edge
+    - grain
+    claim: precise linework and dimension ticks, not carved black ink mass
+  - id: riso-grain
+    differ_on:
+    - edge
+    - grain
+    claim: technical line grammar on uniform blue ground, not grainy overprint blocks
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no hand wobble
+  - no variable line weight
+  - no glowing line
+  - no gradient ground
+  - no fake readable labels
+  anti_taste_patterns:
+  - line width varies like hand sketch
+  - all annotations are removed
+  - line gains neon halo
+  - blue ground turns gradient or shiny
+  - fake labels become clutter
+  is_vs_is_not:
+    is: flat technical blueprint with drafting grammar
+    is_not: hand sketch, neon wireframe, rendered diagram, UI screenshot
+  default_gloss_guard: if line glow, soft halo, or dimensional rendering appears, regenerate as flat blueprint linework
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: bright line on dark ground reads without hue
+  silhouette_test: main line-frame subject survives after fine ticks and labels are removed
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same orthographic projection convention
+  lighting: none-flat with no glow or shade
+  material: same blue ground value and line weight
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 78%, annotation space preserved
+  seed_policy: fixed blueprint noise and annotation grammar
+human_review_rubric:
+  silhouette_gate: pass if blueprint line-frame reads at 64px
+  material_exclusivity_gate: pass if it is matte blueprint linework, not neon or sketch
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if object-only Juju keeps eye-nose triangle and orange scarf outline
+  contrast_gate_ratio: white line to blue ground at least 4.5:1
+  drift_gate: fail hand wobble, neon line, gradient ground, or missing dimension grammar
+  pass_fail_scoring: fail any hard gate before judging technical style
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public blueprint and drafting grammar only; do not copy any actual engineering drawing, product
+    diagram, prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: cyan-draft is an original Signet style id
+regeneration_strategy:
+  if_too_generic: add dimension arrows, leader lines, and center-cross marks
+  if_too_busy: reduce to one or two key drafting annotations and keep main line frame
+  if_small_size_fails: remove label text and small ticks, thicken main line
+  if_off_material: remove glow, variable line weight, gradients, and dimensional shading
+  if_character_drift: render Juju as a structure diagram with fixed eye-nose triangle and scarf outline

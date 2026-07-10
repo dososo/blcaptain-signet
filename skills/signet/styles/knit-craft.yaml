@@ -1,0 +1,271 @@
+schema_version: 3
+id: knit-craft
+english_name: Knit Craft
+chinese_name: 钩织
+tier: D
+recipe_alias: v4 knit craft lane
+summary: Handmade crochet and knitted-yarn lane with visible looped stitches, knit rows following the form, small yarn ends,
+  micro fuzzy fibers, and warm fully diffuse craft volume.
+visual_dna:
+- looped crochet stitches
+- knit rows following rounded forms
+- small yarn ends and fuzzy fibers
+prompt_fragment: a handmade crochet and knitted-yarn object with visible looped stitches, knit rows following the form, tiny
+  yarn-end tails, twisted yarn fibers, thick stuffed volume, and warm fully diffuse craft softness.
+negative_fragment: text, logo, watermark, UI screenshot, flat fabric patch, needle-felted matted fuzz, smooth clay, rubber
+  toy, plastic sheen, specular highlight, random thread tangle.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; color lives on dyed yarn
+    regions, Detail is the dark structural anchor for eyes, holes, seams, and stitch shadows, and the ground stays white or
+    downstream tile only.
+positioning:
+  one_liner: Warm hand-crocheted icon objects with visible stitch construction and native Juju identity.
+  emotional_target: cozy, handmade, trustworthy, gentle, organized
+  use_cases:
+  - companion products
+  - education and family apps
+  - wellbeing tools
+  - warm productivity helpers
+  job: make a product feel approachable without losing 64px silhouette discipline
+native_subjects:
+- Juju knit hero
+- yarn ball
+- scarf, pouch, backpack, plant, heart, cloud, simple companion props
+- soft household objects with clear chunky silhouettes
+when_not_to_use:
+- precision engineering dashboards
+- luxury metal or glass badges
+- dense financial security marks
+- subjects that need sharp thin line detail
+best_for:
+- Juju home material
+- warm companion app icons
+- family and education products
+- handmade brand systems
+not_for:
+- hard technical line art
+- premium metal hardware
+- transparent glass effects
+brand_adaptation_rules:
+- dye yarn regions with generated palette roles instead of adding decorations
+- keep the orange scarf as Juju identity when rendering the character
+- preserve visible stitch rows and yarn-end tell across a set
+example_subjects:
+- Juju knit hero
+- native yarn ball
+- knitted backpack
+material_exclusivity:
+  exclusive_material: handmade crochet and knitted yarn with looped stitches and twisted fibers
+  material_family: knit-crochet-yarn
+  allows_glass: false
+  light_model_enum: fully-diffuse
+  forbidden_finish:
+  - specular highlight
+  - plastic sheen
+  - rubber smoothness
+  - matted felt surface
+  - clay pressure marks
+  - glossy toy reflection
+  imperfection_injection: uneven loop rows, tiny yarn fuzz, and occasional yarn-end tails
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer rendered natively as a knitted guide
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour expressed through stitch rows
+  face_geometry:
+    eye_nose_triangle: two black bead-like eye stitches plus one black nose stitch in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: small stitched bead glint only when it does not turn glossy
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front or slight 3/4 knit figure
+  identity_marks:
+  - orange scarf as a separate knitted strip
+  identity_color:
+    coat: warm white yarn
+    accent: orange knitted scarf
+    theme_color: one dyed yarn role on props or supporting regions
+    annotation: none
+  free_variables:
+  - pose
+  - expression
+  - dyed yarn role
+  - simple prop shape
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-note
+  - untangling-lines
+  - carrying-yarn
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - short-leg proportion
+  forbidden_drift:
+  - becomes-sheep
+  - generic plush toy
+  - needle-felted-matted-edge
+  - smooth-clay-surface
+  - missing-orange-scarf
+  - missing-eye-nose-triangle
+  - random-thread-tangle
+  character_fit: native
+  reference_artifacts:
+  - juju_turnaround
+  - native_yarn_ball
+  - small_size_contact_sheet
+style_recipe:
+  material_stack:
+    base: thick stuffed yarn body built from crochet loops
+    edge: rounded yarn edge with visible loop rows and tiny fuzzy fibers
+    inner_detail: stitch valleys, twisted yarn strands, yarn-end tails, and scarf rib rows
+    finish: fully diffuse warm yarn with no surface shine
+  lighting_rig:
+    model_enum: fully-diffuse
+    key: broad high-key soft light that reveals stitch relief without highlights
+    rim: none
+    shadow: no floor shadow; depth comes from stitch occlusion and soft loop overlap
+    forbidden_lighting:
+    - specular bead highlight
+    - hard rim light
+    - glossy reflection
+    - bloom
+    - wet surface shine
+  camera:
+    angle: front or slight 3/4 product view
+    projection: orthographic or very light perspective
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 5
+    primary_role: dyed yarn main body
+    accent_role: orange scarf or small dyed-yarn pop
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: saturated-sibling
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to yarn regions; ground remains downstream
+      tile
+  detail_budget:
+    macro: one chunky knitted silhouette
+    mid: readable loop rows and scarf strip
+    micro: yarn fuzz and one or two yarn-end tails only
+    legibility_floor_px: 32
+  edge_quality:
+    outline: rounded crochet-loop edge
+    interior_corner: soft stitch valley occlusion
+    terminal: visible yarn-end tail or tucked stitch end
+    bevel: none, volume comes from stuffed yarn thickness
+    anti_aliasing: soft fiber edge but not blurred
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 48
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+edge
+  namable_archetype: hand-crocheted yarn object with loop rows and visible yarn ends
+  silhouette_rule: single chunky silhouette remains nameable at 64px before stitch detail is judged
+  separation_matrix_neighbors:
+  - felt-field
+  - matte-clay
+  - candy-gloss
+  must_differ_from:
+  - id: felt-field
+    differ_on:
+    - edge
+    - grain
+    claim: looped crochet rows and yarn-end tails, not matted felt fiber halo or poke texture
+  - id: matte-clay
+    differ_on:
+    - finish
+    - grain
+    claim: yarn stitches and twisted fibers, not smooth opaque clay pressure dents
+  - id: candy-gloss
+    differ_on:
+    - light_model
+    - finish
+    claim: fully diffuse yarn body, not translucent sugar gloss or controlled specular shine
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no matted felt surface
+  - no smooth clay body
+  - no glossy plastic toy
+  - no random thread tangle
+  - no flat embroidery patch
+  anti_taste_patterns:
+  - loop rows disappear into generic plush fuzz
+  - stitch detail overwhelms the silhouette
+  - yarn turns into smooth clay or rubber
+  - Juju loses eye-nose triangle or orange scarf
+  is_vs_is_not:
+    is: crocheted and knitted yarn with visible loop rows
+    is_not: needle-felted wool, plush toy, smooth clay, rubber capsule, flat fabric patch
+  default_gloss_guard: if any shine or reflection appears, regenerate as fully diffuse yarn with stitch occlusion only
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: chunky silhouette, eye-nose triangle, scarf strip, and stitch-row rhythm read without hue
+  silhouette_test: one dominant knitted silhouette remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same front or slight 3/4 view across the set
+  lighting: fully diffuse high-key yarn light with no highlights
+  material: same crochet loop scale, yarn twist, fuzzy fiber edge, and yarn-end frequency
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed stitch scale with per-icon pose/object variation
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before stitch texture is considered
+  material_exclusivity_gate: pass if looped stitches, knit rows, yarn twist, and line ends are visible without becoming felt
+  glass_budget_gate: must remain non-glass and fully diffuse
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail felt fuzz collapse, smooth clay body, glossy plastic, random thread tangle, or lost Juju identity
+  pass_fail_scoring: fail any hard gate before judging warmth
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stitch/stroke mass is at least tile/32; app_icon subject scale
+    targets 82-88% optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key and recognizable in under one second
+reference_policy:
+  clean_room_boundary: learn public crochet and yarn-craft material principles only; do not copy any third-party character,
+    craft object, prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: knit-craft is an original Signet style id
+regeneration_strategy:
+  if_too_generic: restate looped stitches, knit rows, yarn twist, and small yarn-end tails before style adjectives
+  if_too_busy: reduce stitch density and keep one chunky centered silhouette
+  if_small_size_fails: enlarge silhouette, scarf strip, eye-nose triangle, and stitch row spacing
+  if_off_material: remove felt halo, clay smoothness, rubber shine, and restore crochet-loop construction
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, white yarn coat, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: saturated-sibling
+  tile_generated_downstream: true

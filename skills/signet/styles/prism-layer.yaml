@@ -1,0 +1,237 @@
+schema_version: 3
+id: prism-layer
+english_name: Prism Layer
+chinese_name: 分层琉璃
+summary: 'Authorized glass slot two: two to four separated liquid-glass layers with clean layer edges, air gaps, inter-layer
+  shadows, and system-aligned refraction.
+
+  '
+visual_dna:
+- separated liquid-glass layers
+- clean hard layer edges
+- inter-layer cast shadows
+prompt_fragment: 'an app icon built from 2-4 separated translucent liquid-glass layers, each with clean hard edges carrying
+  one part of the subject, visible air gap, soft inter-layer cast shadows, and one system-aligned specular cue.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI chrome or screenshots,
+  busy backgrounds, single flat layer, baked-in highlight, blurry halo, frosted noise, dreamy bokeh.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. top layer brand color, lower layers in lighter depth tints, plus
+    one neutral highlight; no more than three layer colors.
+best_for:
+- operating-system style app icons
+- platform-level app tiles
+- creative layer and compositing tools
+- system-depth icon families
+not_for:
+- print and craft products
+- matte minimal brand marks
+- dense small system icons
+brand_adaptation_rules:
+- use brand primary on the top layer
+- keep lower layers lighter and subordinate
+- preserve layer count and edge clarity across the set
+example_subjects:
+- Juju layered diagram
+- weather layer icon
+- compositing tool icon
+material_exclusivity:
+  exclusive_material: separated liquid-glass layers with clean layer edges and air gaps
+  material_family: layered-glass
+  allows_glass: true
+  light_model_enum: layer-refraction
+  forbidden_finish:
+  - bloom
+  - neon glow
+  - rim light
+  - rainbow refraction
+  - chrome mirror
+  imperfection_injection: visible air-gap, crisp layer boundary, per-layer alignment shift
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer translated into a layered glass diagram
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: eye and nose marks held on the top layer as three fixed dark points
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: one system-aligned layer cue only, never extra eye sparkle
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: object-only front diagram with slight layer tilt
+  identity_marks:
+  - orange scarf on a lower or adjacent layer
+  identity_color:
+    coat: pale top-layer glass shape
+    accent: orange scarf layer
+    theme_color: top glass tint
+    annotation: none
+  free_variables:
+  - layer count
+  - layer tint
+  - diagram pose
+  - scarf layer placement
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-layer
+  articulation_joints:
+    deformable:
+    - layer-pose cue
+    - front-paw-point layer
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf layer
+  forbidden_drift:
+  - single-flat-gel
+  - missing-layer-edge
+  - rainbow-refraction
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - realistic-dog-render
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: bottom translucent liquid-glass layer with clear edge
+    edge: clean hard edge on each separated layer, never feathered
+    inner_detail: aligned refraction and shallow shadow between layers
+    finish: liquid glass layers with system-aligned surface cue
+  lighting_rig:
+    model_enum: layer-refraction
+    key: single system-aligned soft light across all layers
+    rim: none
+    shadow: soft inter-layer cast shadow showing air gap
+    forbidden_lighting:
+    - bloom
+    - neon glow
+    - rim light
+    - rainbow refraction
+    - multiple scattered highlights
+  camera:
+    angle: straight-on with slight top tilt to reveal layer thickness
+    projection: orthographic or very light perspective
+    crop: complete top layer and visible lower depth rings
+    safe_area_pct: 78
+  color_system:
+    max_colors: 4
+    primary_role: top layer color carries the subject
+    accent_role: lower layer depth tint and scarf layer
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: top-layer main shape
+    mid: two to four separated layer structures
+    micro: layer shadow and aligned refraction cue
+    legibility_floor_px: 36
+  edge_quality:
+    outline: clean hard edge per layer
+    interior_corner: aligned layer corner with air gap
+    terminal: visible layer boundary
+    bevel: layer thickness only
+    anti_aliasing: crisp transparent edge without halo
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 800
+    padding_px: 112
+    stroke_px: 18
+    corner_radius_px: 40
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: separated layered glass app icon
+  silhouette_rule: top-layer subject must read without relying on lower layers
+  separation_matrix_neighbors:
+  - cloison-glass
+  - facet-solid
+  must_differ_from:
+  - id: cloison-glass
+    differ_on:
+    - light_model
+    - edge
+    - grain
+    claim: separated translucent layers and air gaps, not single flush hard-enamel cell plane
+  - id: facet-solid
+    differ_on:
+    - light_model
+    - grain
+    claim: layer refraction and air-gap shadow, not opaque flat triangular face steps
+anti_style_drift:
+  banned_tokens: glass-safe
+  per_style_negatives:
+  - no single flat gel blob
+  - no blurry glow halo
+  - no rainbow refraction
+  - no chrome mirror
+  - no baked-in highlight texture
+  anti_taste_patterns:
+  - layers collapse into one gel surface
+  - halo replaces clean layer edge
+  - rainbow effect overwhelms subject
+  - top silhouette is too weak without lower layers
+  is_vs_is_not:
+    is: separated liquid-glass layers with clean hard edges and air-gap shadows
+    is_not: hard-enamel medallion, single gel blob, crystal shard, chrome object
+  default_gloss_guard: sanctioned glass must stay layer-refraction only; fail bloom, neon rim, rainbow, or chrome mirror
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: top layer and lower depth rings remain readable without hue
+  silhouette_test: top-layer outline stands alone when lower layers are removed
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same straight-on slight-tilt view
+  lighting: same system-aligned light direction across layers
+  material: same glass thickness, edge clarity, and layer count range
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 78%, at least 11% room for layer shadows
+  seed_policy: fixed layer count range and edge clarity
+human_review_rubric:
+  silhouette_gate: pass if top-layer subject reads at 64px
+  material_exclusivity_gate: pass if layers are separated with visible hard edges and air gaps
+  glass_budget_gate: allowed glass slot 2 only
+  character_identity_gate: pass if object-only Juju keeps top-layer eye-nose triangle and orange scarf layer
+  contrast_gate_ratio: top layer to background at least 3:1
+  drift_gate: fail bloom, neon rim, rainbow, chrome, or single gel blob
+  pass_fail_scoring: fail any hard gate before judging depth
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public layered translucent depth principles only; do not copy any operating-system icon asset,
+    prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: prism-layer is an original Signet style id
+regeneration_strategy:
+  if_too_generic: restate two to four separated layers, clean hard edges, and air gaps
+  if_too_busy: reduce to two layers and strengthen top silhouette
+  if_small_size_fails: reduce layer count, strengthen top outline, remove fine refraction cues
+  if_off_material: remove single gel surface, halo, rainbow, bloom, and chrome mirror
+  if_character_drift: place eye-nose triangle on top layer and orange scarf on a lower layer while keeping Juju silhouette

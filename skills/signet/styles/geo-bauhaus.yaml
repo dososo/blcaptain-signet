@@ -1,0 +1,243 @@
+schema_version: 3
+id: geo-bauhaus
+english_name: Geo Bauhaus
+chinese_name: 包豪斯几何扁平
+tier: E
+recipe_alias: bauhaus geometric flat lane
+summary: Flat geometric icon lane using primary-color discipline, circles, triangles, squares, and grid tension.
+visual_dna:
+- primary-color geometry
+- circle triangle square construction
+- grid-balanced flat composition
+prompt_fragment: a flat geometric icon object composed from circles, triangles, and squares, using primary-color discipline,
+  bold simple shapes, visible grid balance, and one centered readable subject with constructive tension.
+negative_fragment: text, logo, watermark, UI screenshot, Corporate Memphis flat people, generic glossy 3D, random geometry pile,
+  bevel, drop shadow, realistic perspective.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; map roles to a restrained
+    primary-color construction with one dark Detail anchor and no decorative extra hues.
+best_for:
+- system tools
+- structured productivity icons
+- rational brand marks
+not_for:
+- soft cute mascots
+- photographic products
+- freeform editorial scenes
+brand_adaptation_rules:
+- construct the subject from circle, triangle, and square primitives
+- keep symmetry or a visible grid as the organizing rule
+- use color to separate structure, not to decorate empty space
+example_subjects:
+- geometric toolkit mark
+- grid calendar object
+- modular vault symbol
+material_exclusivity:
+  exclusive_material: flat geometric vector primitives with primary-color discipline
+  material_family: bauhaus-flat-vector
+  allows_glass: false
+  light_model_enum: none-flat
+  forbidden_finish:
+  - Corporate Memphis flat people
+  - generic glossy 3D
+  - bevel
+  - cast shadow
+  - decorative geometry pile
+  imperfection_injection: slight constructive asymmetry in one primitive placement to avoid dead geometry
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer reduced to a geometric object mark only when explicitly requested
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front geometric silhouette
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated primary construction role only
+  free_variables:
+  - primitive layout
+  - pose
+  - expression
+  - subject crop
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - flat-human-mascot
+  - missing-orange-scarf
+  - extra-limbs
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: matte flat vector primitives
+    edge: crisp circle triangle and square boundaries
+    inner_detail: grid-aligned primitive overlaps and one dark anchor mark
+    finish: flat primary-color fill with no light effect
+  lighting_rig:
+    model_enum: none-flat
+    key: none-flat geometry read
+    rim: none
+    shadow: none
+    forbidden_lighting:
+    - bevel highlight
+    - cast shadow
+    - rim light
+    - surface shine
+  camera:
+    angle: straight-on icon view
+    projection: orthographic flat icon view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 4
+    primary_role: generated Primary Secondary and Tertiary map to primary-color primitive fills
+    accent_role: generated Detail anchors the grid or one small structural joint
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: white_canvas
+    subject_carried_roles: primary/secondary/tertiary/detail are assigned to primitive parts; ground remains white or downstream
+      tile
+  detail_budget:
+    macro: one constructed geometric silhouette
+    mid: three to five primitive masses
+    micro: one grid tick or dark joint only
+    legibility_floor_px: 24
+  edge_quality:
+    outline: crisp flat geometric edge
+    interior_corner: exact square or triangle join
+    terminal: circular, triangular, or square endpoint
+    bevel: none
+    anti_aliasing: crisp vector edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 24
+    corner_radius_px: 0
+    min_gap_px: 30
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: primitive-geometry+grid
+  namable_archetype: primary-color flat object built from circle triangle and square primitives
+  silhouette_rule: single centered object remains nameable after reducing to primitive silhouettes
+  separation_matrix_neighbors:
+  - gradient-flow
+  - duotone-pop
+  - facet-solid
+  must_differ_from:
+  - id: gradient-flow
+    differ_on:
+    - geometry
+    - color_system
+    claim: hard primitive construction, not rounded related-hue gradient fields
+  - id: duotone-pop
+    differ_on:
+    - geometry
+    - palette_discipline
+    claim: primary-color primitive system, not two free brand plates
+  - id: facet-solid
+    differ_on:
+    - light_model
+    - surface
+    claim: none-flat geometric fill, not low-poly facet steps or volume planes
+anti_style_drift:
+  banned_tokens: flat-style-ban
+  per_style_negatives:
+  - no Corporate Memphis flat people
+  - no generic glossy 3D
+  - no random geometry pile
+  - no decorative confetti
+  - no bevel or cast shadow
+  anti_taste_patterns:
+  - primitives pile up without a readable subject
+  - symmetry becomes lifeless and purely mathematical
+  - color becomes decoration rather than structure
+  - geometry turns into a corporate people illustration
+  is_vs_is_not:
+    is: flat primary-color object constructed from basic geometry with grid tension
+    is_not: decorative abstract pile, corporate flat person, low-poly render
+  default_gloss_guard: if shine, bevel, or depth appears, regenerate as matte flat geometric primitives
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable when color roles become values
+  silhouette_test: primitive-built subject reads at 64px as one object
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: fixed orthographic flat icon crop
+  lighting: none-flat, no shadow or rim light
+  material: reuse matte geometric primitives and grid construction
+  palette: reuse palette_family and primary-color role mapping across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed primitive grammar with per-icon layout offset only
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if it remains flat primitive geometry, not shaded render material
+  glass_budget_gate: must remain non-glass and none-flat
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if it becomes random geometry, corporate flat people, or low-poly volume
+  pass_fail_scoring: fail any hard gate before judging geometric tension
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, geometric construction in under one second
+reference_policy:
+  clean_room_boundary: learn public geometric modernist and flat-design principles only; no third-party names, prompts, images,
+    compositions, icons, or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: geo-bauhaus is an original Signet style id
+regeneration_strategy:
+  if_too_generic: restate one focal object, circle triangle square primitives, and grid tension
+  if_too_busy: reduce to three to five primitive masses and one dark anchor
+  if_small_size_fails: enlarge primitives and remove the grid tick
+  if_off_material: remove gloss, bevel, shadow, perspective, and volume
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: white_canvas
+  tile_generated_downstream: true
+asset_type_defaults:
+- app_icon
+- feature_icon

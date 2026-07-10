@@ -1,0 +1,236 @@
+schema_version: 3
+id: ridge-enamel
+english_name: Ridge Enamel
+chinese_name: 软珐琅
+summary: 'A soft-enamel badge style where raised satin metal ridges form the structure around recessed flat matte enamel color
+  fields.
+
+  '
+visual_dna:
+- raised metal ridge skeleton
+- recessed matte enamel flat fields
+- short ridge-only metal glint
+prompt_fragment: 'a soft-enamel pin badge with raised satin metal ridge lines forming a closed skeleton around recessed flat
+  matte enamel color fields, orthographic front view, constant ridge width, flat color cells.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI chrome or screenshots,
+  busy backgrounds, gradient fill in color areas, plain flat outline, mirror metal, over-saturated enamel.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. one satin metal tone plus up to three flat matte enamel colors;
+    color fields stay non-gradient and slightly recessed.
+best_for:
+- badge and pin-style brand assets
+- achievement and medal systems
+- sport and club identifiers
+- retro craft app icons
+not_for:
+- ultra-minimal black-and-white tools
+- dense tiny icon grids
+- realistic natural subjects
+brand_adaptation_rules:
+- use brand primary as one matte enamel field
+- keep metal ridge tone and width consistent
+- keep enamel areas flat and non-gradient
+example_subjects:
+- Juju badge
+- achievement star
+- club shield
+material_exclusivity:
+  exclusive_material: raised satin metal ridge with recessed matte soft-enamel color
+  material_family: soft-enamel
+  allows_glass: false
+  light_model_enum: metal-ridge-glint
+  forbidden_finish:
+  - gloss
+  - gel
+  - crystal
+  - translucent
+  - glow
+  - mirror chrome
+  imperfection_injection: constant raised ridge width with tiny bright-dark ridge glint pair
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer adapted as a soft-enamel badge
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: independent dark enamel dots bounded by metal ridges
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front badge view
+  identity_marks:
+  - orange scarf as a separate matte enamel cell
+  identity_color:
+    coat: warm white enamel
+    accent: orange scarf enamel
+    theme_color: one matte enamel field
+    annotation: none
+  free_variables:
+  - badge outline
+  - enamel color fields
+  - simplified pose
+  - ridge layout
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-star
+  articulation_joints:
+    deformable:
+    - front-paw-point
+    - head-tilt
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf cell
+  forbidden_drift:
+  - flush-hard-enamel
+  - polished-glass-plane
+  - missing-metal-ridge
+  - missing-orange-scarf
+  - generic-animal-badge
+  - mirror-metal-body
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: satin metal badge base
+    edge: raised metal ridge lines above every color region
+    inner_detail: recessed matte enamel fields with flat color and shallow inner shadow
+    finish: satin metal ridges plus matte enamel color, non-mirror
+  lighting_rig:
+    model_enum: metal-ridge-glint
+    key: single directional light creating short line glints only on raised metal ridges
+    rim: none
+    shadow: shallow inner shadow where enamel sits below the ridge
+    forbidden_lighting:
+    - broad mirror reflection
+    - color-field shine
+    - bloom
+    - ring rim
+    - rainbow highlight
+  camera:
+    angle: straight-on badge face
+    projection: orthographic
+    crop: full badge including outer ridge
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: metal ridge defines structure
+    accent_role: up to three matte enamel color fields
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: badge outline plus main ridge skeleton
+    mid: no more than three enamel fields
+    micro: bright-dark ridge glint pair
+    legibility_floor_px: 28
+  edge_quality:
+    outline: raised metal ridge with constant width
+    interior_corner: clean stamped metal junction
+    terminal: closed ridge loops around every color field
+    bevel: ridge height only, not glass bevel
+    anti_aliasing: crisp ridge and recessed field edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 18
+    corner_radius_px: 32
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: raised-ridge soft-enamel pin badge
+  silhouette_rule: raised ridge skeleton and badge outer contour must read at 64px
+  separation_matrix_neighbors:
+  - cloison-glass
+  - lacquer-seal
+  must_differ_from:
+  - id: cloison-glass
+    differ_on:
+    - light_model
+    - edge
+    claim: raised ridge and recessed matte color, not flush polished hard enamel
+  - id: lacquer-seal
+    differ_on:
+    - light_model
+    - grain
+    claim: metal-and-enamel badge, not carved opaque lacquer block
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no color-field gradient
+  - no flush polished plane
+  - no mirror metal body
+  - no plain flat outline
+  - no variable ridge width
+  anti_taste_patterns:
+  - ridge becomes plain outline
+  - enamel fields gain shiny gradients
+  - metal turns mirror-like
+  - ridge width varies and looks cheap
+  is_vs_is_not:
+    is: raised satin metal ridge with recessed matte enamel fields
+    is_not: flush hard enamel, mirror chrome, flat sticker outline
+  default_gloss_guard: keep all bright cues confined to raised metal ridges; regenerate if enamel fields shine
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: raised ridge skeleton stays readable when enamel colors become gray
+  silhouette_test: badge outer form and main ridge divisions remain nameable
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: straight-on orthographic badge face
+  lighting: same ridge-glint direction across the set
+  material: same satin metal tone, ridge width, and matte enamel depth
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, at least 10% margin
+  seed_policy: fixed ridge width and glint direction
+human_review_rubric:
+  silhouette_gate: pass if metal ridge skeleton reads at 64px
+  material_exclusivity_gate: pass if raised ridge and recessed matte enamel are clear
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if Juju eye-nose triangle and orange scarf cell survive
+  contrast_gate_ratio: ridge to adjacent color at least 3:1
+  drift_gate: fail flush hard enamel, gradient fields, mirror metal, or plain sticker outline
+  pass_fail_scoring: fail any hard gate before judging badge polish
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public soft-enamel pin structure only; do not copy any brand pin, badge, prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: ridge-enamel is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen raised ridge bright-dark pair and recessed matte fields
+  if_too_busy: merge enamel cells to two or three fields
+  if_small_size_fails: thicken the main ridge and remove inner ridges
+  if_off_material: remove field gradients, flush polish, mirror metal, and plain outline treatment
+  if_character_drift: keep eye-nose triangle as small dark enamel cells and scarf as orange enamel cell

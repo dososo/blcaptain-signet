@@ -1,0 +1,17 @@
+{
+  "name": "signet-icon-system",
+  "version": "1.0.0",
+  "description": "A clean-room icon identity system with 29 curated visual styles, 272 UI SVG glyphs, prompt compilation, quality gates, and multi-platform export.",
+  "license": "Apache-2.0",
+  "styleCount": 29,
+  "uiSvgCount": 272,
+  "keywords": ["icons", "agent-skills", "prompt-compiler", "design-system", "codex"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Signet Icon System",
+    "shortDescription": "29 icon styles, 272 UI SVGs, and multi-platform export.",
+    "category": "Design",
+    "capabilities": ["Read", "Write"],
+    "brandColor": "#6D7CFF"
+  }
+}

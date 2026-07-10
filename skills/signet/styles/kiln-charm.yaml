@@ -1,0 +1,240 @@
+schema_version: 3
+id: kiln-charm
+english_name: Kiln Charm
+chinese_name: 窑釉小物
+tier: D
+recipe_alias: v4 kiln charm lane
+summary: Vivid ceramic charm lane with satin glaze, recess pooling, thin-edge color break, speckled exposed clay foot ring,
+  and one gold hairline accent.
+visual_dna:
+- satin glaze pool
+- edge color break
+- speckled clay foot ring
+prompt_fragment: a chunky kiln-fired ceramic charm with satin glaze, vivid underglaze color fields, darker pooled glaze in
+  recesses, lighter glaze breaking over edges, speckled exposed clay foot ring, and one tiny gold hairline accent.
+negative_fragment: text, logo, watermark, UI screenshot, mirror reflection, plastic toy, uniform flat paint, dense curl bumps,
+  octane render.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; colored ground is composed
+    downstream, not rendered into the white master.
+best_for:
+- default handcrafted app icon candidates
+- collectible ceramic objects
+- Juju clay-world comparisons
+not_for:
+- technical line art
+- transparent glass effects
+brand_adaptation_rules:
+- keep the material tell constant across the set
+- assign generated palette roles to subject parts, not random decoration
+- preserve Detail as the dark structure anchor
+example_subjects:
+- kiln camera
+- ceramic coffee cup
+- kiln potted plant
+material_exclusivity:
+  exclusive_material: thick stoneware ceramic with satin glaze and exposed clay foot ring
+  material_family: kiln-ceramic-satin
+  allows_glass: false
+  light_model_enum: fully-diffuse
+  forbidden_finish:
+  - octane look
+  - generic glossy plastic
+  - uncontrolled bloom
+  - stock 3D icon
+  imperfection_injection: speckled exposed clay foot ring and uneven glaze pooling
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer and guide adapted to the material lane
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: fixed catchlight only when the lane material permits it
+    expression_set:
+    - focused
+    - curious
+    - happy
+    - wow
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: slight 3/4 hero turn unless the lane is flat editorial
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated palette role on props or ground only
+  free_variables:
+  - pose
+  - expression
+  - camera crop
+  - selected lane material
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - peeking
+  - jumping
+  - thinking
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - generic plush toy
+  - missing-orange-scarf
+  - extra-limbs
+  - garbled-scarf-text
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: thick opaque stoneware ceramic body
+    edge: rounded ceramic edge with glaze thinning and color break
+    inner_detail: recess glaze pooling, speckled clay foot ring, one gold hairline accent
+    finish: satin glaze tone follows form, no mirror reflection
+  lighting_rig:
+    model_enum: fully-diffuse
+    key: bright high-key ceramic light with satin form tone
+    rim: soft ceramic edge lift only
+    shadow: no floor shadow; mild ambient occlusion in recesses
+    forbidden_lighting:
+    - mirror highlight
+    - chrome hotspot
+    - octane gloss
+  camera:
+    angle: straight-on or slight 3/4 product view
+    projection: orthographic icon product view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 5
+    primary_role: generated Primary carries main body
+    accent_role: generated Tertiary or orange accent gives the pop
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: saturated-sibling
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains downstream
+      tile
+  detail_budget:
+    macro: one thick ceramic silhouette
+    mid: glaze pool and clay foot ring
+    micro: single gold hairline accent
+    legibility_floor_px: 32
+  edge_quality:
+    outline: rounded ceramic charm edge
+    interior_corner: glaze pooling in recesses
+    terminal: soft molded ceramic joins
+    bevel: thick rounded bevel
+    anti_aliasing: smooth satin edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+edge
+  namable_archetype: Vivid ceramic charm lane with satin glaze, recess pooling, thin-edge color break, speckled exposed clay
+    foot ring, and one gold hairline accent
+  silhouette_rule: single centered object remains nameable before material effects
+  separation_matrix_neighbors:
+  - candy-gloss
+  - satin-porcelain
+  - matte-clay
+  must_differ_from:
+  - id: satin-porcelain
+    differ_on:
+    - detail
+    - finish
+    claim: vivid charm plus clay foot ring and gold hairline, not quiet satin porcelain object
+  - id: matte-clay
+    differ_on:
+    - finish
+    - grain
+    claim: fired satin glaze and foot ring, not raw matte polymer clay
+anti_style_drift:
+  banned_tokens: generic-ai-look
+  per_style_negatives:
+  - no octane render
+  - no stock 3D icon
+  - no random material mashup
+  - no text or fake logo
+  anti_taste_patterns:
+  - material tell collapses into generic AI plastic
+  - too many decorative fragments
+  - subject no longer nameable
+  is_vs_is_not:
+    is: satin glazed ceramic charm with clay foot ring
+    is_not: plastic toy, mirror ceramic photo, generic glossy icon
+  default_gloss_guard: satin glaze is legal only as kiln tell; fail mirror reflection or generic shiny plastic
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable without palette hue
+  silhouette_test: one dominant silhouette remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: reuse identical crop and optical scale across the set
+  lighting: reuse fully-diffuse lane lighting and its bounded tell
+  material: reuse thick stoneware ceramic with satin glaze and exposed clay foot ring
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed base seed with per-icon offset for hue rotation
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if the lane-specific material tell is visible and not replaced by generic AI plastic
+  glass_budget_gate: 'Phase B1: no numeric glass budget; any shine must be justified by the lane material tell and bounded
+    by anti-drift'
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if generic octane, stock 3D icon, uncontrolled bloom, or material tell collapse appears
+  pass_fail_scoring: fail any hard gate before judging beauty
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key or paper-clear in under one second
+reference_policy:
+  clean_room_boundary: learn public material principles only; no third-party names, prompts, images, compositions, icons,
+    or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: Signet v4 style id is original kebab-case naming
+regeneration_strategy:
+  if_too_generic: restate the lane material tell in concrete nouns before style adjectives
+  if_too_busy: remove decorative fragments and keep one centered object
+  if_small_size_fails: thicken silhouette, reduce micro detail, keep Detail anchor
+  if_off_material: remove generic AI plastic and restore exclusive material
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: saturated-sibling
+  tile_generated_downstream: true

@@ -1,0 +1,245 @@
+schema_version: 3
+id: scene-block
+english_name: Scene Block
+chinese_name: 场景块
+summary: 'An opaque matte isometric support style where simple solid blocks create depth through occlusion and elevation.
+
+  '
+visual_dna:
+- matte isometric solids
+- occlusion elevation
+- hard block silhouette
+prompt_fragment: 'an opaque matte isometric Juju scene built from simple solid blocks, depth shown by overlap and elevation,
+  hard clean block edges, one compact desk-scene prop, centered icon with readable mascot silhouette.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI screenshots, busy backgrounds,
+  glass layer, transparent object, internal light, hazy atmosphere, tiny detailed room, realistic render.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. four to five solid matte block colors including warm white Juju
+    and orange scarf block.
+best_for:
+- workflow products
+- education scenes
+- spatial planning
+- team productivity
+not_for:
+- flat print marks
+- luxury materials
+- single-symbol system icons
+brand_adaptation_rules:
+- map brand color to one isometric block face
+- keep orange scarf as a small elevated block band
+- keep camera angle and block height constant across a set
+example_subjects:
+- Juju at block desk
+- isometric task island
+- stacked block route
+material_exclusivity:
+  exclusive_material: opaque matte isometric solid blocks
+  material_family: scene-block
+  allows_glass: false
+  light_model_enum: occlusion-elevation
+  forbidden_finish:
+  - glow
+  - translucent layer
+  - glossy plastic
+  - specular highlight
+  - glass sheet
+  - atmospheric haze
+  imperfection_injection: tiny block-face seam and controlled elevation gap
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer placed in a compact isometric block scene
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass made from rounded block clusters
+  - short-leg small-dog proportion visible above the desk block
+  - rounded curly-coat outer contour simplified into stacked matte forms
+  face_geometry:
+    eye_nose_triangle: three dark block dots on the front face in fixed triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: fixed isometric 3/4 scene view
+  identity_marks:
+  - orange scarf as raised block band around the neck
+  identity_color:
+    coat: warm white matte block body
+    accent: orange scarf block
+    theme_color: one matte scene block color
+    annotation: none
+  free_variables:
+  - desk prop
+  - block height
+  - pose
+  - scene accent
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-note
+  - moving-blocks
+  articulation_joints:
+    deformable:
+    - head-tilt
+    - front-paw-point
+    - tail-block
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf block
+    - camera angle
+  forbidden_drift:
+  - tiny-room-clutter
+  - glass-layer
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - voxel-game-cubes
+  - flat-vector-sticker
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: opaque matte solid block faces
+    edge: hard isometric block edge with slight roundover
+    inner_detail: small block seams and elevation gaps
+    finish: flat matte solid color on every face
+  lighting_rig:
+    model_enum: occlusion-elevation
+    key: simple top-left light only to separate block faces
+    rim: none
+    shadow: occlusion shadow from block overlap and elevation
+    forbidden_lighting:
+    - internal light
+    - atmospheric glow
+    - bloom
+    - reflective hotspot
+    - transparent caustic
+  camera:
+    angle: fixed isometric 3/4 view
+    projection: orthographic isometric
+    crop: compact scene island with complete mascot silhouette
+    safe_area_pct: 82
+  color_system:
+    max_colors: 5
+    primary_role: warm white Juju block body
+    accent_role: orange scarf block and one scene face
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: one compact scene island
+    mid: Juju plus one desk or task prop
+    micro: block seams and face dots only
+    legibility_floor_px: 32
+  edge_quality:
+    outline: hard isometric block contour
+    interior_corner: clean block seam
+    terminal: elevated block edge
+    bevel: tiny matte roundover
+    anti_aliasing: crisp block edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 18
+    corner_radius_px: 16
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: compact matte isometric block scene
+  silhouette_rule: scene island, Juju mass, and block occlusion read at 64px
+  separation_matrix_neighbors:
+  - layer-paper
+  - facet-solid
+  - matte-clay
+  must_differ_from:
+  - id: layer-paper
+    differ_on:
+    - light_model
+    - edge
+    claim: isometric solid block occlusion and elevation, not flat stacked cardstock layers
+  - id: facet-solid
+    differ_on:
+    - light_model
+    - grain
+    claim: solid block faces and scene occlusion, not discrete triangular facets
+  - id: matte-clay
+    differ_on:
+    - light_model
+    - edge
+    claim: hard scene blocks and elevation shadows, not inflated soft clay body
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no transparent blocks
+  - no internal light
+  - no room clutter
+  - no voxel game cubes
+  - no flat sticker shadow
+  anti_taste_patterns:
+  - scene becomes a tiny room diorama
+  - block count overwhelms Juju silhouette
+  - depth becomes glass stacking
+  - camera angle drifts between icons
+  is_vs_is_not:
+    is: opaque matte isometric solid blocks with occlusion depth
+    is_not: layered paper, glass scene, voxel game asset, flat sticker
+  default_gloss_guard: if any clear layer or shiny surface appears, regenerate as opaque matte isometric blocks
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: scene island, Juju face, and scarf block survive without hue
+  silhouette_test: black silhouette keeps isometric island, mascot head, ears, short legs, and scarf
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: fixed orthographic isometric 3/4 view
+  lighting: same occlusion-elevation light and block-face value split
+  material: same opaque matte blocks and elevation height
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: scene island within central 82%, no edge clipping
+  seed_policy: fixed block height, camera, and shadow direction
+human_review_rubric:
+  silhouette_gate: pass if scene island and Juju read at 64px
+  material_exclusivity_gate: pass if depth comes from opaque block occlusion and elevation
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if Juju keeps eye-nose triangle, ears, short legs, and orange scarf block
+  contrast_gate_ratio: adjacent block faces at least 3:1 apart
+  drift_gate: fail room clutter, clear blocks, internal light, voxel-game look, or flat sticker flattening
+  pass_fail_scoring: fail any hard gate before judging scene clarity
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public isometric block and occlusion principles only; do not copy any game asset, scene, prompt,
+    image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: scene-block is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen isometric block elevation and occlusion relationships
+  if_too_busy: remove extra props until only Juju plus one scene block remains
+  if_small_size_fails: enlarge Juju head and simplify scene island
+  if_off_material: remove clear layers, internal light, voxel cubes, room clutter, and sticker flattening
+  if_character_drift: lock isometric Juju head, eye-nose triangle, orange scarf block, and short legs

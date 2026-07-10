@@ -1,0 +1,270 @@
+schema_version: 3
+id: soft-molded
+english_name: Soft Molded
+chinese_name: 哑光软模
+tier: catalog
+catalog_status: published
+recipe_alias: v4 soft molded utility lane
+summary: A mainstream matte soft-molded utility lane with velvet-touch surface, rounded inflated volume, powder-soft edges, and fully diffuse light.
+visual_dna:
+- velvet-matte soft surface
+- gentle ambient occlusion
+- rounded molded utility volume
+prompt_fragment: a single velvet-matte soft-molded utility object with rounded inflated volume, powder-soft edges, gentle ambient occlusion in seams, fully diffuse studio light, and clean app-icon silhouette on a pure white master.
+negative_fragment: text, logo, watermark, UI screenshot, generic glossy plastic, octane render, wet shiny plastic, random highlight spots, mirror reflection, sharp spikes, thin wires, busy multi-object scene.
+positioning:
+  one_liner: A friendly matte soft 3D utility lane for general app objects.
+  emotional_target: friendly, approachable, modern utility
+  use_cases:
+  - productivity tools
+  - everyday consumer utilities
+  - workflow and notification apps
+  - general app icon systems
+  job: Make common app objects feel tactile and approachable without slipping into shiny stock-render plastic.
+object_archetype:
+  default: single soft-molded utility object
+  preferred:
+  - clock
+  - folder
+  - bell
+  - toggle switch
+  - tray
+  - gear
+  forbidden:
+  - thin-line UI glyph
+  - sharp angular symbol
+  - hard plastic toy
+  - multi-object dashboard scene
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural anchor, and the ground stays white or quiet tile tint. Use soft saturated utility colors with powdery edges and one dark Detail role for seams or tiny functional marks.
+best_for:
+- productivity app icons
+- friendly utility products
+- task and notification tools
+- general-purpose consumer apps
+not_for:
+- luxury glass badges
+- precision engineering diagrams
+- hard-edged metal products
+- dense information scenes
+brand_adaptation_rules:
+- map brand primary to the main molded body
+- keep the surface fully diffuse across the set
+- use Detail only for seams, tiny controls, or eye-nose marks
+- preserve one centered object and avoid decorative fragments
+example_subjects:
+- soft-molded clock
+- matte molded folder
+- soft utility bell
+- rounded toggle switch
+material_exclusivity:
+  exclusive_material: zero-specular velvet-matte molded elastomer
+  material_family: soft-molded-matte
+  allows_glass: false
+  light_model_enum: fully-diffuse
+  forbidden_finish:
+  - generic glossy plastic
+  - octane look
+  - wet shiny plastic
+  - random highlight spots
+  - mirror reflection
+  - hard plastic shell
+  imperfection_injection: powder-soft edge bloom, shallow molded seam compression, gentle ambient occlusion in recesses
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer adapted as a soft-molded matte guide
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two dark molded eye dots plus one dark nose dot in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - happy
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front or slight 3/4 rounded product view
+  identity_marks:
+  - orange scarf as a separate matte molded band
+  identity_color:
+    coat: warm white matte molded body
+    accent: orange matte scarf band
+    theme_color: generated palette role on prop or body panel only
+  free_variables:
+  - pose
+  - expression
+  - selected utility prop
+  - molded panel split
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-note
+  - nudging-toggle
+  - carrying-tray
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - short-leg proportion
+  forbidden_drift:
+  - becomes-sheep
+  - plush-toy-fiber
+  - candy-translucency
+  - glossy-plastic-shine
+  - missing-orange-scarf
+  - extra-limbs
+  - sharp-corner-drift
+  character_fit: capable
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: opaque velvet-matte molded elastomer body
+    edge: powder-soft rounded edge with broad molded compression
+    inner_detail: shallow molded seams, tiny recessed control marks, gentle ambient occlusion
+    finish: fully diffuse soft-touch surface with no specular point
+  lighting_rig:
+    model_enum: fully-diffuse
+    key: broad high-key studio light that reveals form through soft tone changes
+    rim: none
+    shadow: form depth comes from gentle ambient occlusion and part overlap only
+    forbidden_lighting:
+    - octane render
+    - random highlight
+    - mirror reflection
+    - wet shine
+    - hard rim light
+    - uncontrolled bloom
+  camera:
+    angle: straight-on or slight 3/4 product view
+    projection: orthographic icon product view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 5
+    primary_role: generated Primary carries main molded body
+    accent_role: generated Tertiary or orange accent marks a small control or scarf
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: saturated-sibling
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains downstream tile
+  detail_budget:
+    macro: one rounded soft utility silhouette
+    mid: one or two molded seams or functional panels
+    micro: shallow recess AO and one tiny control mark only
+    legibility_floor_px: 32
+  edge_quality:
+    outline: broad soft molded contour
+    interior_corner: rounded molded transition with shallow occlusion
+    terminal: soft elastomer taper, never a sharp point
+    bevel: thick diffuse rounded bevel
+    anti_aliasing: clean powder-soft edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+light_model
+  namable_archetype: velvet-matte soft molded utility object with zero-specular diffuse surface
+  silhouette_rule: single rounded utility object remains nameable before material effects
+  separation_matrix_neighbors:
+  - candy-gloss
+  - felt-field
+  - matte-clay
+  must_differ_from:
+  - id: candy-gloss
+    differ_on:
+    - material
+    - finish
+    claim: opaque matte molded elastomer with no specular point, not translucent sugar body or candy highlight
+  - id: felt-field
+    differ_on:
+    - edge
+    - grain
+    claim: smooth powder-soft molded edge and shallow seam AO, not fuzzy wool fiber halo or poke texture
+  - id: matte-clay
+    differ_on:
+    - detail
+    - finish
+    claim: utility-grade soft-touch molded object with crisp shallow control seams, not handmade pastel clay pressure marks
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no generic glossy plastic
+  - no octane render
+  - no wet shiny plastic
+  - no random highlight spots
+  - no candy translucency
+  - no felt fiber halo
+  anti_taste_patterns:
+  - material collapses into shiny stock plastic
+  - surface gains candy highlight or glass depth
+  - edge turns fuzzy like felt
+  - subject becomes a thin-line UI glyph
+  - too many small decorative controls
+  is_vs_is_not:
+    is: opaque velvet-matte molded elastomer with gentle ambient occlusion
+    is_not: translucent candy, fuzzy felt, handmade clay, glossy stock-render plastic
+  default_gloss_guard: if any specular point, wet shine, mirror reflection, or octane look appears, regenerate as fully diffuse matte molded elastomer
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: utility silhouette and dark Detail seam remain readable without palette hue
+  silhouette_test: one dominant rounded object remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: reuse identical straight-on or slight 3/4 crop across the set
+  lighting: reuse fully diffuse soft studio light with no rim or specular point
+  material: reuse velvet-matte molded elastomer, powder-soft edge, and gentle seam AO
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed molded-edge softness and seam-depth scale
+human_review_rubric:
+  silhouette_gate: pass if the named utility object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if the surface is velvet-matte soft molded elastomer and not shiny plastic
+  glass_budget_gate: must remain non-glass and fully diffuse
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, small-dog mass, and orange scarf remain readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail shiny plastic, candy translucency, felt fiber edge, sharp spikes, or thin-line glyphs
+  pass_fail_scoring: fail any hard gate before judging friendliness
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary 20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50 where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88% optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key and softly dimensional in under one second
+reference_policy:
+  clean_room_boundary: learn public material and market principles only; no third-party names, prompts, images, compositions, icons, or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: Signet v4 style id is original kebab-case naming
+regeneration_strategy:
+  if_too_generic: restate velvet-matte soft molded elastomer, fully diffuse light, and gentle seam AO before any mood words
+  if_too_busy: remove extra controls and keep one centered utility object
+  if_small_size_fails: thicken the rounded silhouette, deepen Detail seam contrast, remove micro marks
+  if_off_material: remove shine, translucency, fiber, and clay marks; restore soft molded matte surface
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: saturated-sibling
+  tile_generated_downstream: true

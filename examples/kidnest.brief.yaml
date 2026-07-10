@@ -1,0 +1,12 @@
+project_name: KidNest
+asset_type: app_icon
+icon_subject: playful learning companion
+brand_words: [friendly, warm, playful]
+audience: parents and kids
+platforms: [ios, android]
+style_family: foam-object
+color_palette:
+  primary: "#FF8A5B"
+  secondary: "#3AAED8"
+  accent: "#FFD166"
+  background: transparent

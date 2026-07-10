@@ -1,0 +1,96 @@
+role_chroma_bands:
+  primary:
+    area_pct: [55, 70]
+    oklch_l: [0.62, 0.82]
+    chroma_ratio_min: 0.60
+    chroma_floor: 0.14
+  secondary:
+    area_pct: [20, 30]
+    oklch_l: [0.60, 0.80]
+    chroma_ratio_min: 0.55
+    chroma_floor: 0.11
+  tertiary:
+    area_pct: [5, 15]
+    oklch_l: [0.55, 0.78]
+    chroma_ratio_min: 0.75
+    chroma_floor: 0.13
+    note: the single vivid spike
+  accent:
+    area_pct: [3, 8]
+    oklch_l: [0.90, 0.97]
+    chroma_range: [0.03, 0.10]
+  detail:
+    area_pct: [2, 8]
+    oklch_l: [0.30, 0.45]
+    chroma_range: [0.05, 0.11]
+hue_rotation:
+  min_span_deg:
+    n_3_to_5: 120
+    n_6_plus: 210
+    absolute_floor: 90
+  per_set_step: 360_div_n
+  seeded_jitter_deg: 8
+  warm_cool_ratio: [60, 40, 80, 20]
+  invariant_roles:
+    - material tell
+    - detail dark-anchor family
+    - house accent when explicitly locked
+colored_ground_modes:
+  cream-tint:
+    oklch_l: [0.94, 0.97]
+    oklch_c_max: 0.045
+    use: Tier E and quiet editorial surfaces
+  saturated-sibling:
+    oklch_l: [0.70, 0.86]
+    oklch_c: [0.10, 0.16]
+    hue_shift_from_primary_deg: [20, 40]
+    use: Tier D front-door icon tile
+  dark-anchor:
+    oklch_l: [0.20, 0.32]
+    oklch_c: [0.05, 0.10]
+    use: dramatic Tier D tile and dark-mode presentation
+palettes:
+  - id: V1
+    name: Tangerine Arcade
+    mood_tags: [vivid, warm, arcade, playful]
+    temperature: warm-led 78:22
+    ground_mode: saturated-sibling
+    roles:
+      primary: {name: tangerine, hex: "#FF8A2B", oklch: [0.75, 0.185, 62], area_pct: 60}
+      secondary: {name: violet cabinet, hex: "#9B5CF0", oklch: [0.58, 0.235, 300], area_pct: 22}
+      tertiary: {name: candy pink spike, hex: "#FF3D9A", oklch: [0.63, 0.265, 353], area_pct: 9}
+      accent: {name: cream light, hex: "#FFF3D6", oklch: [0.96, 0.045, 90], area_pct: 5}
+      detail: {name: chocolate ink, hex: "#3A1E2A", oklch: [0.30, 0.055, 350], area_pct: 4}
+  - id: V2
+    name: Cobalt Citrus
+    mood_tags: [vivid, cool, citrus, technical]
+    temperature: cool-led
+    ground_mode: saturated-sibling
+    roles:
+      primary: {name: cobalt, hex: "#2F6BFF", oklch: [0.55, 0.235, 262], area_pct: 58}
+      secondary: {name: bright teal, hex: "#43E0C4", oklch: [0.82, 0.135, 178], area_pct: 22}
+      tertiary: {name: citrus pop, hex: "#FFD23D", oklch: [0.90, 0.165, 100], area_pct: 11}
+      accent: {name: blue-white, hex: "#F2F6FF", oklch: [0.97, 0.020, 250], area_pct: 4}
+      detail: {name: navy anchor, hex: "#152036", oklch: [0.28, 0.060, 258], area_pct: 5}
+  - id: V3
+    name: Punch Sorbet
+    mood_tags: [vivid, candy, warm, punch]
+    temperature: warm-led 72:28
+    ground_mode: saturated-sibling
+    roles:
+      primary: {name: punch pink, hex: "#FF5C7A", oklch: [0.67, 0.215, 12], area_pct: 56}
+      secondary: {name: orange sorbet, hex: "#FF9E3D", oklch: [0.76, 0.175, 65], area_pct: 22}
+      tertiary: {name: cyan fizz, hex: "#2FD9E8", oklch: [0.79, 0.135, 205], area_pct: 12}
+      accent: {name: vanilla cream, hex: "#FFF6EA", oklch: [0.97, 0.030, 75], area_pct: 5}
+      detail: {name: berry ink, hex: "#3B1622", oklch: [0.27, 0.090, 5], area_pct: 5}
+  - id: V4
+    name: Neon Orchard
+    mood_tags: [vivid, orchard, green, balanced]
+    temperature: warm-balanced 65:35
+    ground_mode: dark-anchor
+    roles:
+      primary: {name: orchard green, hex: "#3FC24B", oklch: [0.73, 0.185, 145], area_pct: 58}
+      secondary: {name: orchid violet, hex: "#B24DE8", oklch: [0.60, 0.225, 305], area_pct: 20}
+      tertiary: {name: golden pop, hex: "#FFB021", oklch: [0.80, 0.170, 78], area_pct: 12}
+      accent: {name: orchard cream, hex: "#F7F3E4", oklch: [0.96, 0.035, 95], area_pct: 4}
+      detail: {name: leaf shadow, hex: "#16321F", oklch: [0.31, 0.075, 150], area_pct: 6}

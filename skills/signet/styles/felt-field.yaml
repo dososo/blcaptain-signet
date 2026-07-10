@@ -1,0 +1,246 @@
+schema_version: 3
+id: felt-field
+english_name: Felt Field
+chinese_name: 羊毛毡
+summary: 'A fully diffuse needle-felt style with opaque wool fiber, fuzzy halo edges, soft rounded bodies, and zero surface
+  shine.
+
+  '
+visual_dna:
+- needle-felted wool fiber
+- fuzzy fiber-halo edge
+- fully diffuse rounded body
+prompt_fragment: 'a needle-felted wool object with opaque matte fiber, fuzzy fiber-halo edge, softly sculpted rounded volumes,
+  visible poke texture, warm handmade craft, centered front or slight three-quarter view.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI chrome or screenshots,
+  busy backgrounds, hard vector edge, smooth rubber surface, sheep, plush toy reflection, oversaturated color.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. opaque felt colors only; warm white body and orange identity accent
+    may be joined by no more than two muted felt colors.
+best_for:
+- children's education
+- companion and wellbeing apps
+- warm handmade brands
+- seasonal gift themes
+- native Juju scenes
+not_for:
+- precision engineering tools
+- finance dashboards
+- dense information icons
+brand_adaptation_rules:
+- use brand color as one dyed felt region
+- keep all surfaces fully diffuse
+- preserve fuzzy edge strength across a set
+example_subjects:
+- Juju felt figure
+- felt cloud
+- felt heart
+material_exclusivity:
+  exclusive_material: opaque needle-felted wool fiber
+  material_family: felt
+  allows_glass: false
+  light_model_enum: fully-diffuse
+  forbidden_finish:
+  - specular
+  - gloss
+  - gel
+  - glow
+  - rim light
+  - plastic sheen
+  imperfection_injection: fuzzy fiber halo, poke texture, uneven matted wool edge
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer rendered natively as felt
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black felt eye dots plus one black felt nose in a fixed triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front or slight 3/4 felt figure
+  identity_marks:
+  - orange scarf as an independent felt strip
+  identity_color:
+    coat: warm white felt
+    accent: orange felt scarf
+    theme_color: one muted felt color
+    annotation: none
+  free_variables:
+  - pose
+  - expression
+  - theme felt color
+  - prop shape
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-note
+  - untangling-lines
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - tail
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - short-leg proportion
+  forbidden_drift:
+  - becomes-sheep
+  - plush-toy-shine
+  - rubber-surface
+  - missing-orange-scarf
+  - missing-eye-nose-triangle
+  - hard-vector-edge
+  character_fit: native
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: opaque needle-felted wool body with matted fiber
+    edge: soft fuzzy fiber halo with 1-3px equivalent wool spill
+    inner_detail: shallow poke texture and felt seam changes
+    finish: fully matte wool with no surface shine
+  lighting_rig:
+    model_enum: fully-diffuse
+    key: broad soft diffuse light with no strong direction
+    rim: none
+    shadow: small soft contact shadow under the object
+    forbidden_lighting:
+    - highlight point
+    - surface reflection
+    - bloom
+    - rim light
+    - plastic sheen
+  camera:
+    angle: front or slight 3/4 view
+    projection: orthographic or very light perspective
+    crop: full rounded body including fuzzy edge
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: opaque felt body color
+    accent_role: scarf or small prop color
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: rounded main body masses
+    mid: no more than three felt color regions
+    micro: poke texture and fiber halo only
+    legibility_floor_px: 32
+  edge_quality:
+    outline: fuzzy wool fiber halo
+    interior_corner: soft matted seam
+    terminal: fiber strands dissolve at the edge
+    bevel: none
+    anti_aliasing: soft but not blurred
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 18
+    corner_radius_px: 48
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: needle-felted wool figurine
+  silhouette_rule: rounded opaque body and fuzzy fiber-halo edge survive at 64px
+  separation_matrix_neighbors:
+  - draft-line
+  - facet-solid
+  - riso-grain
+  must_differ_from:
+  - id: draft-line
+    differ_on:
+    - light_model
+    - edge
+    claim: filled wool body with fuzzy edge, not no-fill pencil contour
+  - id: facet-solid
+    differ_on:
+    - light_model
+    - edge
+    claim: soft fuzzy rounded mass, not hard triangular facets
+  - id: riso-grain
+    differ_on:
+    - light_model
+    - grain
+    claim: wool fiber and poke texture, not printed dot grain or registration offset
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no highlight point
+  - no rubber surface
+  - no hard vector outline
+  - no dense noise texture
+  - no toy reflection
+  anti_taste_patterns:
+  - gains shiny plastic spots
+  - fuzzy edge becomes vector edge
+  - fiber texture becomes noise
+  - body becomes smooth rubber
+  is_vs_is_not:
+    is: opaque needle-felted wool with fuzzy fiber edge
+    is_not: plush toy render, rubber capsule, vector sticker, glass object
+  default_gloss_guard: if any shine or reflection appears, regenerate as fully diffuse matted wool
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: rounded masses and eye-nose triangle read without color
+  silhouette_test: pure black silhouette keeps soft body, drooping ears, short legs, and scarf block
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same front or slight 3/4 view across the set
+  lighting: fully diffuse, no directional highlight
+  material: same wool fiber density, fuzzy edge strength, and matte finish
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, at least 10% margin
+  seed_policy: fixed fiber-halo intensity and poke texture scale
+human_review_rubric:
+  silhouette_gate: pass if fuzzy rounded body reads at 64px
+  material_exclusivity_gate: pass if the surface is opaque wool fiber
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if Juju is native with eye-nose triangle, drooping ears, short legs, and orange scarf
+  contrast_gate_ratio: felt color regions at least 3:1 apart
+  drift_gate: fail shine, rubber, plush reflection, sheep drift, or vector edge
+  pass_fail_scoring: fail any hard gate before judging warmth
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public needle-felt craft principles only; do not copy any craft artist's object, prompt, image,
+    or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: felt-field is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen fuzzy fiber halo and poke texture while keeping form simple
+  if_too_busy: remove fiber microtexture and keep large felt color blocks
+  if_small_size_fails: enlarge body masses, eye-nose triangle, and scarf block
+  if_off_material: remove shine, clear surface, rubber smoothness, and hard outlines
+  if_character_drift: lock black felt eye-nose triangle, orange scarf strip, drooping ears, and short legs

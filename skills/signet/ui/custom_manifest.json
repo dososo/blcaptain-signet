@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-07-10",
+  "generated_by": "skills/signet/ui/param_engine.py",
+  "token_schema": {
+    "grid": "24x24",
+    "viewBox": "0 0 24 24",
+    "stroke": "currentColor",
+    "fill": "none",
+    "stroke-width": "2",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    "corner-policy": "round cap and round join; upstream geometry preserved",
+    "palette-policy": "currentColor driven by CSS color or --signet-ui-color"
+  },
+  "count": 22,
+  "license": "Apache-2.0",
+  "original_statement": "Signet self-authored procedural SVG glyphs; no upstream glyph geometry; released under Apache-2.0.",
+  "glyphs": [
+    {
+      "id": "signet-seal",
+      "label": "Signet seal",
+      "purpose": "Brand seal for Signet-owned UI identity.",
+      "output_file": "custom/signet-seal.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "material-swatch",
+      "label": "Material swatch",
+      "purpose": "Material sample card for style selection.",
+      "output_file": "custom/material-swatch.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "palette-5role",
+      "label": "Palette 5-role",
+      "purpose": "Five-role palette token selector.",
+      "output_file": "custom/palette-5role.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "tier-d-badge",
+      "label": "Tier D badge",
+      "purpose": "Decision-tier badge for D-level curation states.",
+      "output_file": "custom/tier-d-badge.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "tier-e-badge",
+      "label": "Tier E badge",
+      "purpose": "Decision-tier badge for E-level curation states.",
+      "output_file": "custom/tier-e-badge.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-ios",
+      "label": "iOS platform mark",
+      "purpose": "Abstract iOS export target mark.",
+      "output_file": "custom/platform-ios.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-android",
+      "label": "Android platform mark",
+      "purpose": "Abstract Android export target mark.",
+      "output_file": "custom/platform-android.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-harmonyos",
+      "label": "HarmonyOS platform mark",
+      "purpose": "Abstract HarmonyOS export target mark.",
+      "output_file": "custom/platform-harmonyos.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-web",
+      "label": "Web platform mark",
+      "purpose": "Abstract web export target mark.",
+      "output_file": "custom/platform-web.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-pwa",
+      "label": "PWA platform mark",
+      "purpose": "Abstract PWA export target mark.",
+      "output_file": "custom/platform-pwa.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-macos",
+      "label": "macOS platform mark",
+      "purpose": "Abstract macOS export target mark.",
+      "output_file": "custom/platform-macos.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "platform-tvos",
+      "label": "tvOS platform mark",
+      "purpose": "Abstract tvOS export target mark.",
+      "output_file": "custom/platform-tvos.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "export-zip",
+      "label": "Export zip",
+      "purpose": "Packaged export artifact mark.",
+      "output_file": "custom/export-zip.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "squircle-tile",
+      "label": "Squircle tile",
+      "purpose": "App icon tile and safe-area mark.",
+      "output_file": "custom/squircle-tile.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "battery-charging",
+      "label": "Battery charging",
+      "purpose": "Charging and power state control.",
+      "output_file": "custom/battery-charging.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "qr-code",
+      "label": "QR code",
+      "purpose": "QR scan and share entry point.",
+      "output_file": "custom/qr-code.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "undo",
+      "label": "Undo",
+      "purpose": "Undo the most recent action.",
+      "output_file": "custom/undo.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "redo",
+      "label": "Redo",
+      "purpose": "Redo the most recent reverted action.",
+      "output_file": "custom/redo.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "scan",
+      "label": "Scan",
+      "purpose": "Camera or document scan target.",
+      "output_file": "custom/scan.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "sliders-horizontal",
+      "label": "Horizontal sliders",
+      "purpose": "Tune filters and detailed settings.",
+      "output_file": "custom/sliders-horizontal.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "maximize",
+      "label": "Maximize",
+      "purpose": "Expand a panel or viewport.",
+      "output_file": "custom/maximize.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    },
+    {
+      "id": "minimize",
+      "label": "Minimize",
+      "purpose": "Contract a panel or viewport.",
+      "output_file": "custom/minimize.svg",
+      "license": "Apache-2.0",
+      "original_statement": "Signet self-authored procedural SVG glyph; no upstream glyph geometry."
+    }
+  ]
+}

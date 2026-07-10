@@ -1,0 +1,2278 @@
+{
+  "generated_at": "2026-07-10",
+  "generated_by": "skills/signet/ui/theme_ui.py",
+  "upstream": {
+    "name": "lucide-static",
+    "version": "1.23.0",
+    "package_url": "https://unpkg.com/lucide-static@1.23.0/package.json",
+    "license_url": "https://unpkg.com/lucide-static@1.23.0/LICENSE",
+    "repository": "https://github.com/lucide-icons/lucide",
+    "vendored_license": "upstream/lucide/LICENSE"
+  },
+  "token_schema": {
+    "grid": "24x24",
+    "viewBox": "0 0 24 24",
+    "stroke": "currentColor",
+    "fill": "none",
+    "stroke-width": "2",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    "corner-policy": "round cap and round join; upstream geometry preserved",
+    "palette-policy": "currentColor driven by CSS color or --signet-ui-color"
+  },
+  "count": 250,
+  "color_demo": "#0F766E",
+  "apache_2_compatibility": "ISC and MIT notices are permissive and compatible with Apache-2.0 redistribution when retained.",
+  "glyphs": [
+    {
+      "id": "activity",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/activity.svg",
+      "upstream_file": "upstream/lucide/icons/activity.svg",
+      "themed_file": "themed/activity.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "air-vent",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/air-vent.svg",
+      "upstream_file": "upstream/lucide/icons/air-vent.svg",
+      "themed_file": "themed/air-vent.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "alarm-clock",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/alarm-clock.svg",
+      "upstream_file": "upstream/lucide/icons/alarm-clock.svg",
+      "themed_file": "themed/alarm-clock.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "alert-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/alert-circle.svg",
+      "upstream_file": "upstream/lucide/icons/alert-circle.svg",
+      "themed_file": "themed/alert-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "alert-triangle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/alert-triangle.svg",
+      "upstream_file": "upstream/lucide/icons/alert-triangle.svg",
+      "themed_file": "themed/alert-triangle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "archive",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/archive.svg",
+      "upstream_file": "upstream/lucide/icons/archive.svg",
+      "themed_file": "themed/archive.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-down.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-down.svg",
+      "themed_file": "themed/arrow-down.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-down-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-down-circle.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-down-circle.svg",
+      "themed_file": "themed/arrow-down-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-down-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-down-left.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-down-left.svg",
+      "themed_file": "themed/arrow-down-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-down-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-down-right.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-down-right.svg",
+      "themed_file": "themed/arrow-down-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-down-to-line",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-down-to-line.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-down-to-line.svg",
+      "themed_file": "themed/arrow-down-to-line.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-left.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-left.svg",
+      "themed_file": "themed/arrow-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-left-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-left-circle.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-left-circle.svg",
+      "themed_file": "themed/arrow-left-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-right.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-right.svg",
+      "themed_file": "themed/arrow-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-right-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-right-circle.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-right-circle.svg",
+      "themed_file": "themed/arrow-right-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-up.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-up.svg",
+      "themed_file": "themed/arrow-up.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-up-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-up-circle.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-up-circle.svg",
+      "themed_file": "themed/arrow-up-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-up-from-line",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-up-from-line.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-up-from-line.svg",
+      "themed_file": "themed/arrow-up-from-line.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-up-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-up-left.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-up-left.svg",
+      "themed_file": "themed/arrow-up-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "arrow-up-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/arrow-up-right.svg",
+      "upstream_file": "upstream/lucide/icons/arrow-up-right.svg",
+      "themed_file": "themed/arrow-up-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "at-sign",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/at-sign.svg",
+      "upstream_file": "upstream/lucide/icons/at-sign.svg",
+      "themed_file": "themed/at-sign.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "audio-lines",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/audio-lines.svg",
+      "upstream_file": "upstream/lucide/icons/audio-lines.svg",
+      "themed_file": "themed/audio-lines.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "award",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/award.svg",
+      "upstream_file": "upstream/lucide/icons/award.svg",
+      "themed_file": "themed/award.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-alert",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-alert.svg",
+      "upstream_file": "upstream/lucide/icons/badge-alert.svg",
+      "themed_file": "themed/badge-alert.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-check.svg",
+      "upstream_file": "upstream/lucide/icons/badge-check.svg",
+      "themed_file": "themed/badge-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-help",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-help.svg",
+      "upstream_file": "upstream/lucide/icons/badge-help.svg",
+      "themed_file": "themed/badge-help.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-info",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-info.svg",
+      "upstream_file": "upstream/lucide/icons/badge-info.svg",
+      "themed_file": "themed/badge-info.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-minus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-minus.svg",
+      "upstream_file": "upstream/lucide/icons/badge-minus.svg",
+      "themed_file": "themed/badge-minus.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-plus.svg",
+      "upstream_file": "upstream/lucide/icons/badge-plus.svg",
+      "themed_file": "themed/badge-plus.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "badge-x",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/badge-x.svg",
+      "upstream_file": "upstream/lucide/icons/badge-x.svg",
+      "themed_file": "themed/badge-x.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "ban",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/ban.svg",
+      "upstream_file": "upstream/lucide/icons/ban.svg",
+      "themed_file": "themed/ban.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bar-chart-3",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bar-chart-3.svg",
+      "upstream_file": "upstream/lucide/icons/bar-chart-3.svg",
+      "themed_file": "themed/bar-chart-3.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "battery",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/battery.svg",
+      "upstream_file": "upstream/lucide/icons/battery.svg",
+      "themed_file": "themed/battery.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "battery-full",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/battery-full.svg",
+      "upstream_file": "upstream/lucide/icons/battery-full.svg",
+      "themed_file": "themed/battery-full.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "battery-low",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/battery-low.svg",
+      "upstream_file": "upstream/lucide/icons/battery-low.svg",
+      "themed_file": "themed/battery-low.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bell",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bell.svg",
+      "upstream_file": "upstream/lucide/icons/bell.svg",
+      "themed_file": "themed/bell.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bell-off",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bell-off.svg",
+      "upstream_file": "upstream/lucide/icons/bell-off.svg",
+      "themed_file": "themed/bell-off.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bluetooth",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bluetooth.svg",
+      "upstream_file": "upstream/lucide/icons/bluetooth.svg",
+      "themed_file": "themed/bluetooth.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bold",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bold.svg",
+      "upstream_file": "upstream/lucide/icons/bold.svg",
+      "themed_file": "themed/bold.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "book",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/book.svg",
+      "upstream_file": "upstream/lucide/icons/book.svg",
+      "themed_file": "themed/book.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "bookmark",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/bookmark.svg",
+      "upstream_file": "upstream/lucide/icons/bookmark.svg",
+      "themed_file": "themed/bookmark.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "box",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/box.svg",
+      "upstream_file": "upstream/lucide/icons/box.svg",
+      "themed_file": "themed/box.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "briefcase",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/briefcase.svg",
+      "upstream_file": "upstream/lucide/icons/briefcase.svg",
+      "themed_file": "themed/briefcase.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "calendar",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/calendar.svg",
+      "upstream_file": "upstream/lucide/icons/calendar.svg",
+      "themed_file": "themed/calendar.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "camera",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/camera.svg",
+      "upstream_file": "upstream/lucide/icons/camera.svg",
+      "themed_file": "themed/camera.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "cast",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/cast.svg",
+      "upstream_file": "upstream/lucide/icons/cast.svg",
+      "themed_file": "themed/cast.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chart-area",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chart-area.svg",
+      "upstream_file": "upstream/lucide/icons/chart-area.svg",
+      "themed_file": "themed/chart-area.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chart-bar",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chart-bar.svg",
+      "upstream_file": "upstream/lucide/icons/chart-bar.svg",
+      "themed_file": "themed/chart-bar.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chart-line",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chart-line.svg",
+      "upstream_file": "upstream/lucide/icons/chart-line.svg",
+      "themed_file": "themed/chart-line.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chart-pie",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chart-pie.svg",
+      "upstream_file": "upstream/lucide/icons/chart-pie.svg",
+      "themed_file": "themed/chart-pie.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/check.svg",
+      "upstream_file": "upstream/lucide/icons/check.svg",
+      "themed_file": "themed/check.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "check-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/check-check.svg",
+      "upstream_file": "upstream/lucide/icons/check-check.svg",
+      "themed_file": "themed/check-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "check-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/check-circle.svg",
+      "upstream_file": "upstream/lucide/icons/check-circle.svg",
+      "themed_file": "themed/check-circle.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevron-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevron-down.svg",
+      "upstream_file": "upstream/lucide/icons/chevron-down.svg",
+      "themed_file": "themed/chevron-down.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevron-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevron-left.svg",
+      "upstream_file": "upstream/lucide/icons/chevron-left.svg",
+      "themed_file": "themed/chevron-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevron-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevron-right.svg",
+      "upstream_file": "upstream/lucide/icons/chevron-right.svg",
+      "themed_file": "themed/chevron-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevron-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevron-up.svg",
+      "upstream_file": "upstream/lucide/icons/chevron-up.svg",
+      "themed_file": "themed/chevron-up.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevrons-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevrons-down.svg",
+      "upstream_file": "upstream/lucide/icons/chevrons-down.svg",
+      "themed_file": "themed/chevrons-down.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevrons-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevrons-left.svg",
+      "upstream_file": "upstream/lucide/icons/chevrons-left.svg",
+      "themed_file": "themed/chevrons-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevrons-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevrons-right.svg",
+      "upstream_file": "upstream/lucide/icons/chevrons-right.svg",
+      "themed_file": "themed/chevrons-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "chevrons-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/chevrons-up.svg",
+      "upstream_file": "upstream/lucide/icons/chevrons-up.svg",
+      "themed_file": "themed/chevrons-up.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle.svg",
+      "upstream_file": "upstream/lucide/icons/circle.svg",
+      "themed_file": "themed/circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-check.svg",
+      "upstream_file": "upstream/lucide/icons/circle-check.svg",
+      "themed_file": "themed/circle-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-dot",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-dot.svg",
+      "upstream_file": "upstream/lucide/icons/circle-dot.svg",
+      "themed_file": "themed/circle-dot.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-ellipsis",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-ellipsis.svg",
+      "upstream_file": "upstream/lucide/icons/circle-ellipsis.svg",
+      "themed_file": "themed/circle-ellipsis.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-minus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-minus.svg",
+      "upstream_file": "upstream/lucide/icons/circle-minus.svg",
+      "themed_file": "themed/circle-minus.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-play",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-play.svg",
+      "upstream_file": "upstream/lucide/icons/circle-play.svg",
+      "themed_file": "themed/circle-play.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-plus.svg",
+      "upstream_file": "upstream/lucide/icons/circle-plus.svg",
+      "themed_file": "themed/circle-plus.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "circle-x",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/circle-x.svg",
+      "upstream_file": "upstream/lucide/icons/circle-x.svg",
+      "themed_file": "themed/circle-x.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "clipboard",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/clipboard.svg",
+      "upstream_file": "upstream/lucide/icons/clipboard.svg",
+      "themed_file": "themed/clipboard.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "clipboard-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/clipboard-check.svg",
+      "upstream_file": "upstream/lucide/icons/clipboard-check.svg",
+      "themed_file": "themed/clipboard-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "clipboard-copy",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/clipboard-copy.svg",
+      "upstream_file": "upstream/lucide/icons/clipboard-copy.svg",
+      "themed_file": "themed/clipboard-copy.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "clock",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/clock.svg",
+      "upstream_file": "upstream/lucide/icons/clock.svg",
+      "themed_file": "themed/clock.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "cloud",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/cloud.svg",
+      "upstream_file": "upstream/lucide/icons/cloud.svg",
+      "themed_file": "themed/cloud.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "cloud-download",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/cloud-download.svg",
+      "upstream_file": "upstream/lucide/icons/cloud-download.svg",
+      "themed_file": "themed/cloud-download.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "cloud-upload",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/cloud-upload.svg",
+      "upstream_file": "upstream/lucide/icons/cloud-upload.svg",
+      "themed_file": "themed/cloud-upload.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "code",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/code.svg",
+      "upstream_file": "upstream/lucide/icons/code.svg",
+      "themed_file": "themed/code.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "cog",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/cog.svg",
+      "upstream_file": "upstream/lucide/icons/cog.svg",
+      "themed_file": "themed/cog.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "command",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/command.svg",
+      "upstream_file": "upstream/lucide/icons/command.svg",
+      "themed_file": "themed/command.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "compass",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/compass.svg",
+      "upstream_file": "upstream/lucide/icons/compass.svg",
+      "themed_file": "themed/compass.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "copy",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/copy.svg",
+      "upstream_file": "upstream/lucide/icons/copy.svg",
+      "themed_file": "themed/copy.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-down-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-down-left.svg",
+      "upstream_file": "upstream/lucide/icons/corner-down-left.svg",
+      "themed_file": "themed/corner-down-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-down-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-down-right.svg",
+      "upstream_file": "upstream/lucide/icons/corner-down-right.svg",
+      "themed_file": "themed/corner-down-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-left-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-left-down.svg",
+      "upstream_file": "upstream/lucide/icons/corner-left-down.svg",
+      "themed_file": "themed/corner-left-down.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-left-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-left-up.svg",
+      "upstream_file": "upstream/lucide/icons/corner-left-up.svg",
+      "themed_file": "themed/corner-left-up.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-right-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-right-down.svg",
+      "upstream_file": "upstream/lucide/icons/corner-right-down.svg",
+      "themed_file": "themed/corner-right-down.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-right-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-right-up.svg",
+      "upstream_file": "upstream/lucide/icons/corner-right-up.svg",
+      "themed_file": "themed/corner-right-up.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-up-left",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-up-left.svg",
+      "upstream_file": "upstream/lucide/icons/corner-up-left.svg",
+      "themed_file": "themed/corner-up-left.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "corner-up-right",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/corner-up-right.svg",
+      "upstream_file": "upstream/lucide/icons/corner-up-right.svg",
+      "themed_file": "themed/corner-up-right.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "credit-card",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/credit-card.svg",
+      "upstream_file": "upstream/lucide/icons/credit-card.svg",
+      "themed_file": "themed/credit-card.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "crop",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/crop.svg",
+      "upstream_file": "upstream/lucide/icons/crop.svg",
+      "themed_file": "themed/crop.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "database",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/database.svg",
+      "upstream_file": "upstream/lucide/icons/database.svg",
+      "themed_file": "themed/database.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "download",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/download.svg",
+      "upstream_file": "upstream/lucide/icons/download.svg",
+      "themed_file": "themed/download.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "edit",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/edit.svg",
+      "upstream_file": "upstream/lucide/icons/edit.svg",
+      "themed_file": "themed/edit.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "eraser",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/eraser.svg",
+      "upstream_file": "upstream/lucide/icons/eraser.svg",
+      "themed_file": "themed/eraser.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "ethernet-port",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/ethernet-port.svg",
+      "upstream_file": "upstream/lucide/icons/ethernet-port.svg",
+      "themed_file": "themed/ethernet-port.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "external-link",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/external-link.svg",
+      "upstream_file": "upstream/lucide/icons/external-link.svg",
+      "themed_file": "themed/external-link.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "eye",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/eye.svg",
+      "upstream_file": "upstream/lucide/icons/eye.svg",
+      "themed_file": "themed/eye.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "eye-off",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/eye-off.svg",
+      "upstream_file": "upstream/lucide/icons/eye-off.svg",
+      "themed_file": "themed/eye-off.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file.svg",
+      "upstream_file": "upstream/lucide/icons/file.svg",
+      "themed_file": "themed/file.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-archive",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-archive.svg",
+      "upstream_file": "upstream/lucide/icons/file-archive.svg",
+      "themed_file": "themed/file-archive.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-check.svg",
+      "upstream_file": "upstream/lucide/icons/file-check.svg",
+      "themed_file": "themed/file-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-code",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-code.svg",
+      "upstream_file": "upstream/lucide/icons/file-code.svg",
+      "themed_file": "themed/file-code.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-down.svg",
+      "upstream_file": "upstream/lucide/icons/file-down.svg",
+      "themed_file": "themed/file-down.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-image",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-image.svg",
+      "upstream_file": "upstream/lucide/icons/file-image.svg",
+      "themed_file": "themed/file-image.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-json",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-json.svg",
+      "upstream_file": "upstream/lucide/icons/file-json.svg",
+      "themed_file": "themed/file-json.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-lock",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-lock.svg",
+      "upstream_file": "upstream/lucide/icons/file-lock.svg",
+      "themed_file": "themed/file-lock.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-plus.svg",
+      "upstream_file": "upstream/lucide/icons/file-plus.svg",
+      "themed_file": "themed/file-plus.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-search",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-search.svg",
+      "upstream_file": "upstream/lucide/icons/file-search.svg",
+      "themed_file": "themed/file-search.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-text",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-text.svg",
+      "upstream_file": "upstream/lucide/icons/file-text.svg",
+      "themed_file": "themed/file-text.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "file-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/file-up.svg",
+      "upstream_file": "upstream/lucide/icons/file-up.svg",
+      "themed_file": "themed/file-up.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "filter",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/filter.svg",
+      "upstream_file": "upstream/lucide/icons/filter.svg",
+      "themed_file": "themed/filter.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "fingerprint",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/fingerprint.svg",
+      "upstream_file": "upstream/lucide/icons/fingerprint.svg",
+      "themed_file": "themed/fingerprint.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "flag",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/flag.svg",
+      "upstream_file": "upstream/lucide/icons/flag.svg",
+      "themed_file": "themed/flag.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "folder",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/folder.svg",
+      "upstream_file": "upstream/lucide/icons/folder.svg",
+      "themed_file": "themed/folder.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "folder-open",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/folder-open.svg",
+      "upstream_file": "upstream/lucide/icons/folder-open.svg",
+      "themed_file": "themed/folder-open.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "folder-plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/folder-plus.svg",
+      "upstream_file": "upstream/lucide/icons/folder-plus.svg",
+      "themed_file": "themed/folder-plus.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "folders",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/folders.svg",
+      "upstream_file": "upstream/lucide/icons/folders.svg",
+      "themed_file": "themed/folders.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "forward",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/forward.svg",
+      "upstream_file": "upstream/lucide/icons/forward.svg",
+      "themed_file": "themed/forward.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "gauge",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/gauge.svg",
+      "upstream_file": "upstream/lucide/icons/gauge.svg",
+      "themed_file": "themed/gauge.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "globe",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/globe.svg",
+      "upstream_file": "upstream/lucide/icons/globe.svg",
+      "themed_file": "themed/globe.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "grab",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/grab.svg",
+      "upstream_file": "upstream/lucide/icons/grab.svg",
+      "themed_file": "themed/grab.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "grid",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/grid.svg",
+      "upstream_file": "upstream/lucide/icons/grid.svg",
+      "themed_file": "themed/grid.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "hard-drive",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/hard-drive.svg",
+      "upstream_file": "upstream/lucide/icons/hard-drive.svg",
+      "themed_file": "themed/hard-drive.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "hash",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/hash.svg",
+      "upstream_file": "upstream/lucide/icons/hash.svg",
+      "themed_file": "themed/hash.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "headphones",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/headphones.svg",
+      "upstream_file": "upstream/lucide/icons/headphones.svg",
+      "themed_file": "themed/headphones.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "heart",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/heart.svg",
+      "upstream_file": "upstream/lucide/icons/heart.svg",
+      "themed_file": "themed/heart.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "help-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/help-circle.svg",
+      "upstream_file": "upstream/lucide/icons/help-circle.svg",
+      "themed_file": "themed/help-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "home",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/home.svg",
+      "upstream_file": "upstream/lucide/icons/home.svg",
+      "themed_file": "themed/home.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "image",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/image.svg",
+      "upstream_file": "upstream/lucide/icons/image.svg",
+      "themed_file": "themed/image.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "inbox",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/inbox.svg",
+      "upstream_file": "upstream/lucide/icons/inbox.svg",
+      "themed_file": "themed/inbox.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "info",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/info.svg",
+      "upstream_file": "upstream/lucide/icons/info.svg",
+      "themed_file": "themed/info.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "italic",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/italic.svg",
+      "upstream_file": "upstream/lucide/icons/italic.svg",
+      "themed_file": "themed/italic.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "key",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/key.svg",
+      "upstream_file": "upstream/lucide/icons/key.svg",
+      "themed_file": "themed/key.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "laptop",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/laptop.svg",
+      "upstream_file": "upstream/lucide/icons/laptop.svg",
+      "themed_file": "themed/laptop.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "laptop-minimal",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/laptop-minimal.svg",
+      "upstream_file": "upstream/lucide/icons/laptop-minimal.svg",
+      "themed_file": "themed/laptop-minimal.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "layout",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/layout.svg",
+      "upstream_file": "upstream/lucide/icons/layout.svg",
+      "themed_file": "themed/layout.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "link",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/link.svg",
+      "upstream_file": "upstream/lucide/icons/link.svg",
+      "themed_file": "themed/link.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "link-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/link-2.svg",
+      "upstream_file": "upstream/lucide/icons/link-2.svg",
+      "themed_file": "themed/link-2.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "list",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/list.svg",
+      "upstream_file": "upstream/lucide/icons/list.svg",
+      "themed_file": "themed/list.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "loader",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/loader.svg",
+      "upstream_file": "upstream/lucide/icons/loader.svg",
+      "themed_file": "themed/loader.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "loader-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/loader-circle.svg",
+      "upstream_file": "upstream/lucide/icons/loader-circle.svg",
+      "themed_file": "themed/loader-circle.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "locate",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/locate.svg",
+      "upstream_file": "upstream/lucide/icons/locate.svg",
+      "themed_file": "themed/locate.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "lock",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/lock.svg",
+      "upstream_file": "upstream/lucide/icons/lock.svg",
+      "themed_file": "themed/lock.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "lock-keyhole",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/lock-keyhole.svg",
+      "upstream_file": "upstream/lucide/icons/lock-keyhole.svg",
+      "themed_file": "themed/lock-keyhole.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "log-in",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/log-in.svg",
+      "upstream_file": "upstream/lucide/icons/log-in.svg",
+      "themed_file": "themed/log-in.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "log-out",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/log-out.svg",
+      "upstream_file": "upstream/lucide/icons/log-out.svg",
+      "themed_file": "themed/log-out.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "mail",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/mail.svg",
+      "upstream_file": "upstream/lucide/icons/mail.svg",
+      "themed_file": "themed/mail.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "map",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/map.svg",
+      "upstream_file": "upstream/lucide/icons/map.svg",
+      "themed_file": "themed/map.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "map-pin",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/map-pin.svg",
+      "upstream_file": "upstream/lucide/icons/map-pin.svg",
+      "themed_file": "themed/map-pin.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "menu",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/menu.svg",
+      "upstream_file": "upstream/lucide/icons/menu.svg",
+      "themed_file": "themed/menu.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "message-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/message-circle.svg",
+      "upstream_file": "upstream/lucide/icons/message-circle.svg",
+      "themed_file": "themed/message-circle.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "message-square",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/message-square.svg",
+      "upstream_file": "upstream/lucide/icons/message-square.svg",
+      "themed_file": "themed/message-square.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "messages-square",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/messages-square.svg",
+      "upstream_file": "upstream/lucide/icons/messages-square.svg",
+      "themed_file": "themed/messages-square.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "mic",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/mic.svg",
+      "upstream_file": "upstream/lucide/icons/mic.svg",
+      "themed_file": "themed/mic.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "mic-off",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/mic-off.svg",
+      "upstream_file": "upstream/lucide/icons/mic-off.svg",
+      "themed_file": "themed/mic-off.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "minus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/minus.svg",
+      "upstream_file": "upstream/lucide/icons/minus.svg",
+      "themed_file": "themed/minus.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "monitor",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/monitor.svg",
+      "upstream_file": "upstream/lucide/icons/monitor.svg",
+      "themed_file": "themed/monitor.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "moon",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/moon.svg",
+      "upstream_file": "upstream/lucide/icons/moon.svg",
+      "themed_file": "themed/moon.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "more-horizontal",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/more-horizontal.svg",
+      "upstream_file": "upstream/lucide/icons/more-horizontal.svg",
+      "themed_file": "themed/more-horizontal.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "more-vertical",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/more-vertical.svg",
+      "upstream_file": "upstream/lucide/icons/more-vertical.svg",
+      "themed_file": "themed/more-vertical.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "move",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/move.svg",
+      "upstream_file": "upstream/lucide/icons/move.svg",
+      "themed_file": "themed/move.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "music",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/music.svg",
+      "upstream_file": "upstream/lucide/icons/music.svg",
+      "themed_file": "themed/music.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "navigation",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/navigation.svg",
+      "upstream_file": "upstream/lucide/icons/navigation.svg",
+      "themed_file": "themed/navigation.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "navigation-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/navigation-2.svg",
+      "upstream_file": "upstream/lucide/icons/navigation-2.svg",
+      "themed_file": "themed/navigation-2.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "octagon-alert",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/octagon-alert.svg",
+      "upstream_file": "upstream/lucide/icons/octagon-alert.svg",
+      "themed_file": "themed/octagon-alert.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "package",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/package.svg",
+      "upstream_file": "upstream/lucide/icons/package.svg",
+      "themed_file": "themed/package.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "paintbrush",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/paintbrush.svg",
+      "upstream_file": "upstream/lucide/icons/paintbrush.svg",
+      "themed_file": "themed/paintbrush.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "paperclip",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/paperclip.svg",
+      "upstream_file": "upstream/lucide/icons/paperclip.svg",
+      "themed_file": "themed/paperclip.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "pause-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/pause-circle.svg",
+      "upstream_file": "upstream/lucide/icons/pause-circle.svg",
+      "themed_file": "themed/pause-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "pen-tool",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/pen-tool.svg",
+      "upstream_file": "upstream/lucide/icons/pen-tool.svg",
+      "themed_file": "themed/pen-tool.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "pencil",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/pencil.svg",
+      "upstream_file": "upstream/lucide/icons/pencil.svg",
+      "themed_file": "themed/pencil.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "percent",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/percent.svg",
+      "upstream_file": "upstream/lucide/icons/percent.svg",
+      "themed_file": "themed/percent.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "phone",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/phone.svg",
+      "upstream_file": "upstream/lucide/icons/phone.svg",
+      "themed_file": "themed/phone.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "play-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/play-circle.svg",
+      "upstream_file": "upstream/lucide/icons/play-circle.svg",
+      "themed_file": "themed/play-circle.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "plug",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/plug.svg",
+      "upstream_file": "upstream/lucide/icons/plug.svg",
+      "themed_file": "themed/plug.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/plus.svg",
+      "upstream_file": "upstream/lucide/icons/plus.svg",
+      "themed_file": "themed/plus.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "plus-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/plus-circle.svg",
+      "upstream_file": "upstream/lucide/icons/plus-circle.svg",
+      "themed_file": "themed/plus-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "podcast",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/podcast.svg",
+      "upstream_file": "upstream/lucide/icons/podcast.svg",
+      "themed_file": "themed/podcast.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "power",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/power.svg",
+      "upstream_file": "upstream/lucide/icons/power.svg",
+      "themed_file": "themed/power.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "printer",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/printer.svg",
+      "upstream_file": "upstream/lucide/icons/printer.svg",
+      "themed_file": "themed/printer.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "radio",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/radio.svg",
+      "upstream_file": "upstream/lucide/icons/radio.svg",
+      "themed_file": "themed/radio.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "redo-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/redo-2.svg",
+      "upstream_file": "upstream/lucide/icons/redo-2.svg",
+      "themed_file": "themed/redo-2.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "refresh-ccw",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/refresh-ccw.svg",
+      "upstream_file": "upstream/lucide/icons/refresh-ccw.svg",
+      "themed_file": "themed/refresh-ccw.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "refresh-cw",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/refresh-cw.svg",
+      "upstream_file": "upstream/lucide/icons/refresh-cw.svg",
+      "themed_file": "themed/refresh-cw.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "repeat",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/repeat.svg",
+      "upstream_file": "upstream/lucide/icons/repeat.svg",
+      "themed_file": "themed/repeat.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "reply",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/reply.svg",
+      "upstream_file": "upstream/lucide/icons/reply.svg",
+      "themed_file": "themed/reply.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "rotate-ccw",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/rotate-ccw.svg",
+      "upstream_file": "upstream/lucide/icons/rotate-ccw.svg",
+      "themed_file": "themed/rotate-ccw.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "rotate-cw",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/rotate-cw.svg",
+      "upstream_file": "upstream/lucide/icons/rotate-cw.svg",
+      "themed_file": "themed/rotate-cw.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "route",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/route.svg",
+      "upstream_file": "upstream/lucide/icons/route.svg",
+      "themed_file": "themed/route.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "rss",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/rss.svg",
+      "upstream_file": "upstream/lucide/icons/rss.svg",
+      "themed_file": "themed/rss.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "save",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/save.svg",
+      "upstream_file": "upstream/lucide/icons/save.svg",
+      "themed_file": "themed/save.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "scissors",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/scissors.svg",
+      "upstream_file": "upstream/lucide/icons/scissors.svg",
+      "themed_file": "themed/scissors.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "search",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/search.svg",
+      "upstream_file": "upstream/lucide/icons/search.svg",
+      "themed_file": "themed/search.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "send",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/send.svg",
+      "upstream_file": "upstream/lucide/icons/send.svg",
+      "themed_file": "themed/send.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "server",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/server.svg",
+      "upstream_file": "upstream/lucide/icons/server.svg",
+      "themed_file": "themed/server.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "settings",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/settings.svg",
+      "upstream_file": "upstream/lucide/icons/settings.svg",
+      "themed_file": "themed/settings.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "share",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/share.svg",
+      "upstream_file": "upstream/lucide/icons/share.svg",
+      "themed_file": "themed/share.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shield",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shield.svg",
+      "upstream_file": "upstream/lucide/icons/shield.svg",
+      "themed_file": "themed/shield.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shield-alert",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shield-alert.svg",
+      "upstream_file": "upstream/lucide/icons/shield-alert.svg",
+      "themed_file": "themed/shield-alert.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shield-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shield-check.svg",
+      "upstream_file": "upstream/lucide/icons/shield-check.svg",
+      "themed_file": "themed/shield-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shield-user",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shield-user.svg",
+      "upstream_file": "upstream/lucide/icons/shield-user.svg",
+      "themed_file": "themed/shield-user.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shield-x",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shield-x.svg",
+      "upstream_file": "upstream/lucide/icons/shield-x.svg",
+      "themed_file": "themed/shield-x.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shopping-bag",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shopping-bag.svg",
+      "upstream_file": "upstream/lucide/icons/shopping-bag.svg",
+      "themed_file": "themed/shopping-bag.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "shopping-cart",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/shopping-cart.svg",
+      "upstream_file": "upstream/lucide/icons/shopping-cart.svg",
+      "themed_file": "themed/shopping-cart.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "sidebar",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/sidebar.svg",
+      "upstream_file": "upstream/lucide/icons/sidebar.svg",
+      "themed_file": "themed/sidebar.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "signpost",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/signpost.svg",
+      "upstream_file": "upstream/lucide/icons/signpost.svg",
+      "themed_file": "themed/signpost.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "skip-back",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/skip-back.svg",
+      "upstream_file": "upstream/lucide/icons/skip-back.svg",
+      "themed_file": "themed/skip-back.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "skip-forward",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/skip-forward.svg",
+      "upstream_file": "upstream/lucide/icons/skip-forward.svg",
+      "themed_file": "themed/skip-forward.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "smartphone",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/smartphone.svg",
+      "upstream_file": "upstream/lucide/icons/smartphone.svg",
+      "themed_file": "themed/smartphone.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "smile",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/smile.svg",
+      "upstream_file": "upstream/lucide/icons/smile.svg",
+      "themed_file": "themed/smile.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "sparkles",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/sparkles.svg",
+      "upstream_file": "upstream/lucide/icons/sparkles.svg",
+      "themed_file": "themed/sparkles.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "star",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/star.svg",
+      "upstream_file": "upstream/lucide/icons/star.svg",
+      "themed_file": "themed/star.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "strikethrough",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/strikethrough.svg",
+      "upstream_file": "upstream/lucide/icons/strikethrough.svg",
+      "themed_file": "themed/strikethrough.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "sun",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/sun.svg",
+      "upstream_file": "upstream/lucide/icons/sun.svg",
+      "themed_file": "themed/sun.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "table",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/table.svg",
+      "upstream_file": "upstream/lucide/icons/table.svg",
+      "themed_file": "themed/table.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "table-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/table-2.svg",
+      "upstream_file": "upstream/lucide/icons/table-2.svg",
+      "themed_file": "themed/table-2.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "tag",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/tag.svg",
+      "upstream_file": "upstream/lucide/icons/tag.svg",
+      "themed_file": "themed/tag.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "target",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/target.svg",
+      "upstream_file": "upstream/lucide/icons/target.svg",
+      "themed_file": "themed/target.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "terminal",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/terminal.svg",
+      "upstream_file": "upstream/lucide/icons/terminal.svg",
+      "themed_file": "themed/terminal.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "thumbs-down",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/thumbs-down.svg",
+      "upstream_file": "upstream/lucide/icons/thumbs-down.svg",
+      "themed_file": "themed/thumbs-down.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "thumbs-up",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/thumbs-up.svg",
+      "upstream_file": "upstream/lucide/icons/thumbs-up.svg",
+      "themed_file": "themed/thumbs-up.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "trash",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/trash.svg",
+      "upstream_file": "upstream/lucide/icons/trash.svg",
+      "themed_file": "themed/trash.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "trash-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/trash-2.svg",
+      "upstream_file": "upstream/lucide/icons/trash-2.svg",
+      "themed_file": "themed/trash-2.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "triangle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/triangle.svg",
+      "upstream_file": "upstream/lucide/icons/triangle.svg",
+      "themed_file": "themed/triangle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "truck",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/truck.svg",
+      "upstream_file": "upstream/lucide/icons/truck.svg",
+      "themed_file": "themed/truck.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "tv",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/tv.svg",
+      "upstream_file": "upstream/lucide/icons/tv.svg",
+      "themed_file": "themed/tv.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "type",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/type.svg",
+      "upstream_file": "upstream/lucide/icons/type.svg",
+      "themed_file": "themed/type.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "underline",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/underline.svg",
+      "upstream_file": "upstream/lucide/icons/underline.svg",
+      "themed_file": "themed/underline.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "undo-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/undo-2.svg",
+      "upstream_file": "upstream/lucide/icons/undo-2.svg",
+      "themed_file": "themed/undo-2.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "unfold-horizontal",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/unfold-horizontal.svg",
+      "upstream_file": "upstream/lucide/icons/unfold-horizontal.svg",
+      "themed_file": "themed/unfold-horizontal.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "upload",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/upload.svg",
+      "upstream_file": "upstream/lucide/icons/upload.svg",
+      "themed_file": "themed/upload.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "user",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/user.svg",
+      "upstream_file": "upstream/lucide/icons/user.svg",
+      "themed_file": "themed/user.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "user-check",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/user-check.svg",
+      "upstream_file": "upstream/lucide/icons/user-check.svg",
+      "themed_file": "themed/user-check.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "user-plus",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/user-plus.svg",
+      "upstream_file": "upstream/lucide/icons/user-plus.svg",
+      "themed_file": "themed/user-plus.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "users",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/users.svg",
+      "upstream_file": "upstream/lucide/icons/users.svg",
+      "themed_file": "themed/users.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "video",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/video.svg",
+      "upstream_file": "upstream/lucide/icons/video.svg",
+      "themed_file": "themed/video.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "volume-1",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/volume-1.svg",
+      "upstream_file": "upstream/lucide/icons/volume-1.svg",
+      "themed_file": "themed/volume-1.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "volume-2",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/volume-2.svg",
+      "upstream_file": "upstream/lucide/icons/volume-2.svg",
+      "themed_file": "themed/volume-2.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "volume-x",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/volume-x.svg",
+      "upstream_file": "upstream/lucide/icons/volume-x.svg",
+      "themed_file": "themed/volume-x.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "wallet",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/wallet.svg",
+      "upstream_file": "upstream/lucide/icons/wallet.svg",
+      "themed_file": "themed/wallet.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "wand-sparkles",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/wand-sparkles.svg",
+      "upstream_file": "upstream/lucide/icons/wand-sparkles.svg",
+      "themed_file": "themed/wand-sparkles.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "webcam",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/webcam.svg",
+      "upstream_file": "upstream/lucide/icons/webcam.svg",
+      "themed_file": "themed/webcam.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "wifi",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/wifi.svg",
+      "upstream_file": "upstream/lucide/icons/wifi.svg",
+      "themed_file": "themed/wifi.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "wrench",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/wrench.svg",
+      "upstream_file": "upstream/lucide/icons/wrench.svg",
+      "themed_file": "themed/wrench.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "x",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/x.svg",
+      "upstream_file": "upstream/lucide/icons/x.svg",
+      "themed_file": "themed/x.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "x-circle",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/x-circle.svg",
+      "upstream_file": "upstream/lucide/icons/x-circle.svg",
+      "themed_file": "themed/x-circle.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "zap",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/zap.svg",
+      "upstream_file": "upstream/lucide/icons/zap.svg",
+      "themed_file": "themed/zap.svg",
+      "license": "ISC",
+      "license_notice": "Lucide icon; ISC notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "zoom-in",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/zoom-in.svg",
+      "upstream_file": "upstream/lucide/icons/zoom-in.svg",
+      "themed_file": "themed/zoom-in.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    },
+    {
+      "id": "zoom-out",
+      "upstream_source_url": "https://unpkg.com/lucide-static@1.23.0/icons/zoom-out.svg",
+      "upstream_file": "upstream/lucide/icons/zoom-out.svg",
+      "themed_file": "themed/zoom-out.svg",
+      "license": "MIT",
+      "license_notice": "Feather-derived icon; MIT notice retained in upstream Lucide LICENSE",
+      "derivative_statement": "Normalized stroke/color tokens only; upstream geometry preserved; attributed upstream; not original artwork."
+    }
+  ]
+}

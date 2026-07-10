@@ -1,0 +1,244 @@
+schema_version: 3
+id: carbon-twill
+english_name: Carbon Twill
+chinese_name: 碳纤斜纹
+summary: 'A matte woven carbon-fibre hard-surface style with 2/2 diagonal twill, opaque charcoal body, machined edges, and
+  no old carbon-core edge-light treatment.
+
+  '
+visual_dna:
+- matte 2/2 carbon-fibre twill
+- machined hard edge
+- anisotropic diagonal grain streak
+prompt_fragment: 'a matte woven carbon-fibre hard-surface part, opaque charcoal 2/2 twill weave, machined hard edges with
+  a tiny CNC chamfer, anisotropic diagonal grain streak, one cool titanium accent line, centered 3/4 hero view.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI chrome or screenshots,
+  busy backgrounds, neon edge, mirror clear-coat, glass, gel, wet look, plastic sheen, oversaturated color, random weave direction.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. charcoal twill in two or three value steps plus one cool titanium
+    or functional accent under 10% area.
+best_for:
+- high-performance tools
+- hardware and drone apps
+- developer performance monitoring
+- security and encryption products
+- enthusiast digital gear
+not_for:
+- children's education
+- health and care products
+- warm handmade lifestyle brands
+brand_adaptation_rules:
+- keep charcoal as the dominant material color
+- use brand accent only as one cool structural line under 10% area
+- keep weave direction and density consistent across the set
+example_subjects:
+- carbon-fibre performance badge
+- drone arm node
+- etched Juju silhouette nameplate
+material_exclusivity:
+  exclusive_material: matte woven carbon-fibre 2/2 twill
+  material_family: carbon-fibre
+  allows_glass: false
+  light_model_enum: anisotropic-grain-streak
+  forbidden_finish:
+  - clear-coat mirror
+  - edge-light treatment
+  - neon rim
+  - chrome
+  - wet-look plastic
+  imperfection_injection: diagonal 2/2 weave alignment, slight twill value shift, CNC edge precision
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer adapted as a carbon-fibre silhouette nameplate
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: three etched dark grooves or inlaid dots in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: simplified object silhouette, not full character render
+  identity_marks:
+  - orange scarf represented as a small inlaid accent band
+  identity_color:
+    coat: charcoal twill replaces coat as material costume
+    accent: orange scarf inlay
+    theme_color: one cool functional accent
+    annotation: none
+  free_variables:
+  - nameplate outline
+  - twill scale
+  - cool accent line
+  - etched pose cue
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-tool
+  articulation_joints:
+    deformable:
+    - silhouette pose cue
+    - front-paw-point groove
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf accent
+  forbidden_drift:
+  - full-fluffy-dog-render
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - neon-edge-carbon-core
+  - random-weave-noise
+  - mirror-clearcoat
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: opaque matte carbon-fibre with 2/2 diagonal twill in deep charcoal
+    edge: precise machined hard edge with tiny CNC chamfer
+    inner_detail: diagonal twill weave with anisotropic value streaks following one 45-degree direction
+    finish: satin-matte carbon fibre without clear-coat mirror or old carbon-core edge-light treatment
+  lighting_rig:
+    model_enum: anisotropic-grain-streak
+    key: single diagonal key light that reveals the weave direction as value streaks
+    rim: none
+    shadow: one restrained hard-edge contact shadow if needed
+    forbidden_lighting:
+    - neon edge
+    - ring rim
+    - bloom
+    - mirror clear-coat
+    - scattered hotspots
+  camera:
+    angle: 3/4 hero angle with slight top-down view
+    projection: light perspective
+    crop: single centered hard-surface part with complete outline
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: charcoal twill carries the body
+    accent_role: one cool titanium or functional line under 10% area
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: hard-edge geometric body
+    mid: diagonal twill direction and value bands
+    micro: individual twill weave only above 24px
+    legibility_floor_px: 24
+  edge_quality:
+    outline: crisp machined hard edge
+    interior_corner: precise CNC junction
+    terminal: weave terminates cleanly at edge
+    bevel: tiny chamfer only
+    anti_aliasing: crisp industrial edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 16
+    corner_radius_px: 12
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: matte woven carbon-fibre machined nameplate
+  silhouette_rule: hard geometric body with diagonal twill value bands; no edge-light outline
+  separation_matrix_neighbors:
+  - brushed-alloy
+  - facet-solid
+  - lacquer-seal
+  must_differ_from:
+  - id: brushed-alloy
+    differ_on:
+    - edge
+    - grain
+    claim: woven diagonal twill, not linear brushed metal grain
+  - id: facet-solid
+    differ_on:
+    - light_model
+    - grain
+    claim: anisotropic weave streaks, not flat polygon value steps
+  - id: lacquer-seal
+    differ_on:
+    - light_model
+    - edge
+    claim: machined carbon part, not carved lacquer seal surface
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no neon edge
+  - no ring rim
+  - no mirror clear-coat
+  - no random weave direction
+  - no saturated rainbow accent
+  anti_taste_patterns:
+  - reverts to old carbon-core edge-light effect
+  - weave becomes noisy static
+  - clear coat turns into plastic
+  - accent color takes over the charcoal body
+  is_vs_is_not:
+    is: matte woven carbon-fibre twill with anisotropic diagonal value streak
+    is_not: neon-edged carbon core, mirror-coated plastic, brushed metal, random dark texture
+  default_gloss_guard: if the body becomes shiny, wet, mirror-like, or edge-lit, regenerate as opaque matte woven twill
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: diagonal twill value direction and hard edge remain readable after color removal
+  silhouette_test: hard geometric body reads without relying on accent color or edge light
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same 3/4 top-down hero angle
+  lighting: same diagonal anisotropic direction across all icons
+  material: same twill density, charcoal value range, and CNC edge treatment
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, at least 10% margin
+  seed_policy: fixed weave direction and period seed for all siblings
+human_review_rubric:
+  silhouette_gate: pass if hard geometric body reads at 64px without edge light
+  material_exclusivity_gate: pass if material is matte 2/2 carbon twill, not metal, plastic, or glass
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if object-only Juju keeps eye-nose triangle and orange scarf accent
+  contrast_gate_ratio: twill bright and dark bands at least 2:1, accent to base at least 3:1
+  drift_gate: fail old carbon-core edge-light effect, wet clearcoat, or random noise texture
+  pass_fail_scoring: fail any hard gate before judging industrial polish
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no shadow; app_icon has no alpha; tile chroma stays below half of
+    subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public carbon-fibre twill material physics only; do not copy any product shell, nameplate design,
+    prompt, image, or composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: carbon-twill is an original Signet style id
+regeneration_strategy:
+  if_too_generic: strengthen diagonal anisotropic value bands and 2/2 twill direction
+  if_too_busy: reduce weave density and keep only body plus one accent line
+  if_small_size_fails: simplify weave into one diagonal value direction while preserving hard edge
+  if_off_material: remove neon edge, mirror clearcoat, plastic sheen, and random texture
+  if_character_drift: convert Juju into a carbon-fibre silhouette nameplate with etched eye-nose triangle and orange scarf
+    inlay

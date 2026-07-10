@@ -1,0 +1,18 @@
+project_name: DevPulse
+asset_type: feature_icon_set
+brand_words: [technical, fast, reliable]
+audience: developer teams
+style_family: blueprint-grid
+color_palette:
+  primary: "#4F8CFF"
+  secondary: "#1DE9B6"
+  accent: "#FFD166"
+  background: transparent
+icons:
+  - dashboard analytics
+  - API monitoring
+  - deployment pipeline
+  - error alerts
+  - team permissions
+  - billing usage
+avoid: [text, letters, fake logo, brand lookalike, watermark]

@@ -1,0 +1,240 @@
+schema_version: 3
+id: nacre-drift
+english_name: Nacre Drift
+chinese_name: 黑漆螺钿
+tier: D
+recipe_alias: v4 nacre drift lane
+summary: Black-lacquer nacre lane with flush shell islands, hairline black seams, and blue-green-violet iridescence that reads
+  as shell, not mosaic.
+visual_dna:
+- black lacquer base
+- flush nacre islands
+- hairline seams and shell iridescence
+prompt_fragment: a black lacquer object with flush mother-of-pearl shell inlay islands, hairline black seams, organic shell
+  striations, and blue green violet iridescence drifting across each nacre island.
+negative_fragment: text, logo, watermark, UI screenshot, colorful mosaic, stained glass, random jewel tiles, mirror chrome,
+  octane render.
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; palette_family defaults to vivid; colored ground is composed
+    downstream, not rendered into the white master.
+best_for:
+- premium dark app icons
+- luxury material studies
+- hardware icons
+not_for:
+- flat editorial diagrams
+- low-contrast favicons
+brand_adaptation_rules:
+- keep the material tell constant across the set
+- assign generated palette roles to subject parts, not random decoration
+- preserve Detail as the dark structure anchor
+example_subjects:
+- nacre camera
+- nacre headphones
+- black lacquer piggy bank
+material_exclusivity:
+  exclusive_material: black lacquer with flush mother-of-pearl inlay islands
+  material_family: black-lacquer-nacre
+  allows_glass: true
+  light_model_enum: controlled-specular
+  forbidden_finish:
+  - octane look
+  - generic glossy plastic
+  - uncontrolled bloom
+  - stock 3D icon
+  imperfection_injection: organic shell striation direction and tiny seam irregularity
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer and guide adapted to the material lane
+  silhouette_invariants:
+  - drooping-ear Bichon head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: two black eye dots plus one black nose in a fixed isosceles triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: fixed catchlight only when the lane material permits it
+    expression_set:
+    - focused
+    - curious
+    - happy
+    - wow
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: slight 3/4 hero turn unless the lane is flat editorial
+  identity_marks:
+  - orange scarf
+  identity_color:
+    coat: warm white
+    accent: orange scarf
+    theme_color: generated palette role on props or ground only
+  free_variables:
+  - pose
+  - expression
+  - camera crop
+  - selected lane material
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - peeking
+  - jumping
+  - thinking
+  - carrying-notes
+  articulation_joints:
+    deformable:
+    - neck-tilt
+    - front-paw-point
+    - scarf-follow-through
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - small-dog proportion
+  forbidden_drift:
+  - becomes-sheep
+  - pet-photography
+  - generic plush toy
+  - missing-orange-scarf
+  - extra-limbs
+  - garbled-scarf-text
+  character_fit: object-only
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: deep black lacquer body
+    edge: hairline black seams around flush shell islands
+    inner_detail: organic nacre striations with blue-green-violet iridescence
+    finish: polished lacquer plus shell shimmer bounded to inlay islands
+  lighting_rig:
+    model_enum: controlled-specular
+    key: controlled specular sweep on shell islands only
+    rim: none or minimal dark lacquer edge lift
+    shadow: none on floor; dark object reads by shell contrast
+    forbidden_lighting:
+    - rainbow glass tiles
+    - mosaic sparkle field
+    - octane chrome
+  camera:
+    angle: straight-on or slight 3/4 product view
+    projection: orthographic icon product view
+    crop: single centered object, 82-88% optical occupancy
+    safe_area_pct: 84
+  color_system:
+    max_colors: 4
+    primary_role: black lacquer and shell carry identity
+    accent_role: generated Tertiary or orange accent gives the pop
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role palette with family selection
+    palette_family: vivid
+    role_chroma_bands: v4 chroma bands from house_palettes_vivid.yaml
+    set_hue_rotation: rotate primary hue across sets when count>1
+    colored_ground_default: dark-anchor
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains downstream
+      tile
+  detail_budget:
+    macro: black object silhouette
+    mid: large nacre islands
+    micro: hairline seams and shell striations
+    legibility_floor_px: 32
+  edge_quality:
+    outline: black lacquer silhouette
+    interior_corner: flush inlay seam
+    terminal: closed shell island edge
+    bevel: subtle lacquer rounding
+    anti_aliasing: polished but crisp
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 840
+    padding_px: 92
+    stroke_px: 18
+    corner_radius_px: 36
+    min_gap_px: 24
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: material+edge
+  namable_archetype: Black-lacquer nacre lane with flush shell islands, hairline black seams, and blue-green-violet iridescence
+    that reads as shell, not mosaic
+  silhouette_rule: single centered object remains nameable before material effects
+  separation_matrix_neighbors:
+  - terrazzo-scatter
+  - cloison-glass
+  - candy-gloss
+  must_differ_from:
+  - id: terrazzo-scatter
+    differ_on:
+    - material
+    - grain
+    claim: flush pearlescent shell islands on black lacquer, not matte stone chips
+  - id: cloison-glass
+    differ_on:
+    - edge
+    - grain
+    claim: hairline black seams and organic shell striations, not metal cloison cells
+anti_style_drift:
+  banned_tokens: generic-ai-look
+  per_style_negatives:
+  - no octane render
+  - no stock 3D icon
+  - no random material mashup
+  - no text or fake logo
+  anti_taste_patterns:
+  - material tell collapses into generic AI plastic
+  - too many decorative fragments
+  - subject no longer nameable
+  is_vs_is_not:
+    is: black lacquer with true nacre shell inlay
+    is_not: color mosaic, stained glass, generic jewel icon
+  default_gloss_guard: iridescence is legal only as shell tell; fail mosaic, rainbow glass, or chrome
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: subject remains readable without palette hue
+  silhouette_test: one dominant silhouette remains nameable at 64px
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: reuse identical crop and optical scale across the set
+  lighting: reuse controlled-specular lane lighting and its bounded tell
+  material: reuse black lacquer with flush mother-of-pearl inlay islands
+  palette: reuse palette_family and hue-rotation policy across siblings
+  safe_area: subject within central 82-88% optical live area
+  seed_policy: fixed base seed with per-icon offset for hue rotation
+human_review_rubric:
+  silhouette_gate: pass if the named object reads at 64px grayscale before color is considered
+  material_exclusivity_gate: pass if the lane-specific material tell is visible and not replaced by generic AI plastic
+  glass_budget_gate: 'Phase B1: no numeric glass budget; any shine must be justified by the lane material tell and bounded
+    by anti-drift'
+  character_identity_gate: when Juju is rendered, eye-nose triangle, drooping ears, white Bichon mass, and orange scarf remain
+    readable
+  contrast_gate_ratio: 3:1 minimum figure-ground and part-part contrast for app_icon surfaces
+  drift_gate: fail if generic octane, stock 3D icon, uncontrolled bloom, or material tell collapse appears
+  pass_fail_scoring: fail any hard gate before judging beauty
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50
+    where the selected vivid hue allows it
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white with no alpha for app_icon; colored ground is downstream tile only and
+    keeps subject first
+  R5_first_glance_read: one focal subject, readable at 48px, high-key or paper-clear in under one second
+reference_policy:
+  clean_room_boundary: learn public material principles only; no third-party names, prompts, images, compositions, icons,
+    or product marks
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: Signet v4 style id is original kebab-case naming
+regeneration_strategy:
+  if_too_generic: restate the lane material tell in concrete nouns before style adjectives
+  if_too_busy: remove decorative fragments and keep one centered object
+  if_small_size_fails: thicken silhouette, reduce micro detail, keep Detail anchor
+  if_off_material: remove generic AI plastic and restore exclusive material
+  if_character_drift: restore Bichon silhouette, eye-nose triangle, drooping ears, and orange scarf
+presentation_staging:
+  white_master: true
+  colored_ground_default: dark-anchor
+  tile_generated_downstream: true

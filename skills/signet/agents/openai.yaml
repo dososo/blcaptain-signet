@@ -1,0 +1,12 @@
+# Codex skill metadata (optional). Official schema: developers.openai.com/codex/skills
+interface:
+  display_name: "Signet — Icon Style System"
+  short_description: "24 clean-room icon style families with a prompt compiler, batch consistency, and optional preflight/export."
+  brand_color: "#6D7CFF"
+  default_prompt: "Use Signet to create a consistent app icon or feature icon set from this brief."
+
+policy:
+  allow_implicit_invocation: true
+
+# No MCP tool dependencies. `dependencies.tools` is for MCP servers only; the optional
+# Python scripts need Pillow + PyYAML, documented in the README (not declarable here).

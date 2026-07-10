@@ -1,0 +1,244 @@
+schema_version: 3
+id: layer-paper
+english_name: Layer Paper
+chinese_name: 层叠纸雕
+summary: 'A matte cut-cardstock support style where depth comes from stacked flat paper layers and inter-layer cast shadows,
+  not internal light.
+
+  '
+visual_dna:
+- matte cut cardstock layers
+- clean paper cut edges
+- inter-layer cast shadow
+prompt_fragment: 'a matte layered cardstock paper cut icon, stacked flat paper layers with clean cut edges, visible air gap
+  between layers, soft inter-layer cast shadows, Juju assembled from separate paper shapes.
+
+  '
+negative_fragment: 'text, letters, numbers, wordmarks, fake logos, brand lookalikes, watermarks, UI screenshots, busy backgrounds,
+  internal light, halo, plastic sheet, transparent film, fuzzy edge.
+
+  '
+color_behavior:
+  palette: Palette is generated per request by the 5-role engine; color lives on subject parts, Detail is the dark structural
+    anchor, and the ground stays white or quiet tile tint. matte paper colors with one orange identity layer, limited to four
+    flat cardstock tones.
+best_for:
+- education explainers
+- craft products
+- onboarding illustrations
+- friendly productivity tools
+not_for:
+- metal hardware
+- luxury glass icons
+- dense system trays
+brand_adaptation_rules:
+- map brand primary to the top paper layer
+- keep orange scarf as its own paper layer
+- lock shadow direction and layer gap across the set
+example_subjects:
+- Juju paper cut figure
+- layered mountain valley
+- paper flower
+material_exclusivity:
+  exclusive_material: matte cut cardstock in stacked layers
+  material_family: layered-paper
+  allows_glass: false
+  light_model_enum: inter-layer-cast-shadow
+  forbidden_finish:
+  - glow
+  - luminous
+  - internal light
+  - translucent film
+  - gloss
+  - plastic sheen
+  imperfection_injection: tiny paper edge fiber, visible air gap, consistent inter-layer shadow
+character_dna:
+  ref: juju
+  species: white Bichon Frise curly-coat small dog
+  role: complex-problem organizer assembled as layered paper
+  silhouette_invariants:
+  - drooping-ear Bichon blob head and body mass
+  - short-leg small-dog proportion
+  - rounded curly-coat outer contour
+  face_geometry:
+    eye_nose_triangle: top-layer dark paper dots in a fixed triangle
+    eye_spacing: one implied eye-width gap between eyes
+    catchlight: none
+    expression_set:
+    - focused
+    - curious
+    - reassuring
+    - thinking
+    - pointing-out
+  proportion:
+    head_to_body: large head, compact body, short legs
+    canonical_angle: front paper-layer composition
+  identity_marks:
+  - orange scarf as separate cardstock layer
+  identity_color:
+    coat: warm white paper layer
+    accent: orange scarf layer
+    theme_color: one paper layer color
+    annotation: none
+  free_variables:
+  - layer count
+  - pose
+  - paper color
+  - prop layer
+  action_vocabulary:
+  - pointing
+  - sorting-cards
+  - holding-note
+  articulation_joints:
+    deformable:
+    - head-tilt
+    - front-paw-point
+    rigid:
+    - eye-nose triangle
+    - ear droop
+    - scarf layer
+  forbidden_drift:
+  - internal-light-paper
+  - glass-layer
+  - missing-eye-nose-triangle
+  - missing-orange-scarf
+  - fuzzy-felt-edge
+  - flat-vector-sticker
+  character_fit: native
+  reference_artifacts:
+  - turnaround_front_34_side
+  - expression_sheet
+  - do_dont_sheet
+style_recipe:
+  material_stack:
+    base: bottom matte cardstock layer
+    edge: clean cut paper edge with tiny fiber
+    inner_detail: stacked flat shapes separated by visible air gaps
+    finish: matte paper surface with no coating
+  lighting_rig:
+    model_enum: inter-layer-cast-shadow
+    key: soft directional light revealing shadows between layers
+    rim: none
+    shadow: inter-layer cast shadow only
+    forbidden_lighting:
+    - internal light
+    - halo
+    - surface shine
+    - bloom
+    - transparent film
+  camera:
+    angle: straight-on with slight top reveal of layer thickness
+    projection: orthographic
+    crop: complete layered subject and shadows
+    safe_area_pct: 80
+  color_system:
+    max_colors: 4
+    primary_role: top paper layer carries subject
+    accent_role: orange scarf or one small layer
+    contrast_rule_ratio: '3:1'
+    palette_engine: per-request 5-role subject-carried palette; no fixed style-owned hex
+    subject_carried_roles: primary/secondary/tertiary/accent/detail are assigned to subject parts; ground remains white or
+      quiet tile tint
+  detail_budget:
+    macro: top-layer silhouette
+    mid: three to five paper layer shapes
+    micro: tiny cut-edge fiber and inter-layer shadow
+    legibility_floor_px: 32
+  edge_quality:
+    outline: crisp cut paper edge
+    interior_corner: clean cut junction
+    terminal: visible paper thickness
+    bevel: paper thickness only
+    anti_aliasing: crisp matte cut edge
+  keyline_block:
+    canvas_px: 1024
+    live_area_px: 820
+    padding_px: 102
+    stroke_px: 16
+    corner_radius_px: 12
+    min_gap_px: 28
+    pixel_snap: true
+style_separation_lock:
+  orthogonality_axis: light_model
+  namable_archetype: stacked matte paper cutout
+  silhouette_rule: top paper silhouette and layer shadows read at 64px
+  separation_matrix_neighbors:
+  - prism-layer
+  - press-relief
+  - scene-block
+  must_differ_from:
+  - id: prism-layer
+    differ_on:
+    - light_model
+    - grain
+    claim: matte cardstock layers with paper fiber, not liquid-glass layer refraction
+  - id: press-relief
+    differ_on:
+    - light_model
+    - edge
+    claim: stacked paper cut edges and air-gap shadows, not recessed paper well
+  - id: scene-block
+    differ_on:
+    - light_model
+    - edge
+    claim: flat stacked paper layers, not isometric solid blocks with occlusion depth
+anti_style_drift:
+  banned_tokens: shared
+  per_style_negatives:
+  - no internal light
+  - no glass layer
+  - no plastic sheet
+  - no fuzzy felt edge
+  - no flat sticker
+  anti_taste_patterns:
+  - paper starts glowing from within
+  - layers become transparent film
+  - cut edges blur into felt
+  - shadows become floating sticker shadows
+  is_vs_is_not:
+    is: matte stacked cut cardstock with inter-layer shadows
+    is_not: luminous paper, glass layer, felt object, flat sticker
+  default_gloss_guard: if light comes from inside or layers look clear, regenerate as opaque matte cardstock
+thumbnail_first_rules:
+  min_size_px: 24
+  grayscale_test: top silhouette and inter-layer shadows read without color
+  silhouette_test: top layer alone remains nameable, scarf layer stays identifiable
+  contact_sheet_64px_pass: true
+  detail_survives_downscale_to: 24
+batch_consistency_lock:
+  camera: same straight-on slight layer reveal
+  lighting: same inter-layer shadow direction
+  material: same cardstock thickness and cut edge
+  palette: reuse the exact same palette_engine 5-role result and seed across the batch
+  safe_area: subject within central 80%, room for shadows
+  seed_policy: fixed layer gap and shadow softness
+human_review_rubric:
+  silhouette_gate: pass if top paper silhouette reads at 64px
+  material_exclusivity_gate: pass if layers are opaque matte cardstock
+  glass_budget_gate: must remain non-glass
+  character_identity_gate: pass if native Juju keeps paper eye-nose triangle and orange scarf layer
+  contrast_gate_ratio: adjacent paper layers at least 3:1 apart
+  drift_gate: fail internal light, transparent film, fuzzy edge, or flat sticker
+  pass_fail_scoring: fail any hard gate before judging paper craft
+  R1_palette_roles: subject shows at least 3 roles from the generated palette; area hierarchy keeps primary 55-70, secondary
+    20-30, tertiary 5-15; no machine triad band
+  R2_dark_anchor: Detail is the unique dark anchor; every bright role clears tone delta 40 and Primary clears tone delta 50;
+    never pure black or gray
+  R3_silhouette_weight: black-silhouette test passes; minimum stroke is at least tile/32; app_icon subject scale targets 82-88%
+    optical live area
+  R4_quiet_ground: generation ground is pure white; app_icon has no alpha; gentle contact and grounding shadows naturally
+    cast by stacked paper layers are allowed; strong floating cast shadows and saturated contrasting grounds are forbidden;
+    tile chroma stays below half of subject chroma
+  R5_first_glance_read: one focal subject, readable at 48px, high-key without muddy dark regions
+reference_policy:
+  clean_room_boundary: learn public layered paper craft principles only; do not copy any paper artwork, prompt, image, or
+    composition
+  no_third_party_names: true
+  no_copied_prompts_or_images: true
+  original_naming_lock: layer-paper is an original Signet style id
+regeneration_strategy:
+  if_too_generic: emphasize stacked paper layers and air-gap shadows
+  if_too_busy: reduce layer count and simplify top silhouette
+  if_small_size_fails: remove micro fiber and thicken layer separations
+  if_off_material: remove internal light, clear layers, plastic sheet, and sticker shadow
+  if_character_drift: keep top-layer eye-nose triangle and orange scarf as separate paper layer

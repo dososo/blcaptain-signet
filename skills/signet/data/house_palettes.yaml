@@ -1,0 +1,101 @@
+palettes:
+  - id: milkshake-counter
+    name: Milkshake Counter
+    mood_tags: [dessert, warm, playful]
+    temperature: warm-led 80:20
+    roles:
+      primary: {name: strawberry milk, hex: "#FFC9D6", area_pct: 60}
+      secondary: {name: pistachio, hex: "#B8E6B3", area_pct: 22}
+      tertiary: {name: apricot syrup, hex: "#FFA85C", area_pct: 9}
+      accent: {name: vanilla foam, hex: "#FFF6DC", area_pct: 5}
+      detail: {name: dark chocolate, hex: "#4E2A1A", area_pct: 4}
+  - id: sherbet-fizz
+    name: Sherbet Fizz
+    mood_tags: [sherbet, warm, playful]
+    temperature: warm-led 75:25
+    roles:
+      primary: {name: orange sherbet, hex: "#FFC48A", area_pct: 58}
+      secondary: {name: raspberry swirl, hex: "#F98BAE", area_pct: 24}
+      tertiary: {name: lime zest, hex: "#C8E87A", area_pct: 10}
+      accent: {name: lemon cream, hex: "#FFF5C2", area_pct: 4}
+      detail: {name: mulled plum, hex: "#4A2338", area_pct: 4}
+  - id: berry-ink
+    name: Berry Ink
+    mood_tags: [berry, cool, elegant]
+    temperature: cool-led 30:70
+    roles:
+      primary: {name: blueberry milk, hex: "#B9C6F2", area_pct: 62}
+      secondary: {name: raspberry stain, hex: "#E88AB8", area_pct: 21}
+      tertiary: {name: bright mulberry, hex: "#B276E8", area_pct: 8}
+      accent: {name: oat cream, hex: "#F6EEDD", area_pct: 5}
+      detail: {name: blackcurrant ink, hex: "#3B2145", area_pct: 4}
+  - id: sea-glass-morning
+    name: Sea Glass Morning
+    mood_tags: [ocean, calm, cool, fresh]
+    temperature: cool-led 25:75
+    roles:
+      primary: {name: seafoam, hex: "#BEE8DC", area_pct: 60}
+      secondary: {name: dune sand, hex: "#F2DDB8", area_pct: 22}
+      tertiary: {name: coral, hex: "#FF8E72", area_pct: 9}
+      accent: {name: shell white, hex: "#FBF3E6", area_pct: 4}
+      detail: {name: kelp ink, hex: "#1F3A38", area_pct: 5}
+  - id: apricot-dusk
+    name: Apricot Dusk
+    mood_tags: [sunset, warm, dreamy]
+    temperature: warm-led 78:22
+    roles:
+      primary: {name: apricot haze, hex: "#FFC08C", area_pct: 58}
+      secondary: {name: dusty rose, hex: "#E89BA7", area_pct: 25}
+      tertiary: {name: violet hour, hex: "#A98BE0", area_pct: 8}
+      accent: {name: cloud cream, hex: "#FFF0DE", area_pct: 5}
+      detail: {name: espresso plum, hex: "#45242E", area_pct: 4}
+  - id: moss-lantern
+    name: Moss Lantern
+    mood_tags: [forest, natural, earthy]
+    temperature: warm-pop earthy
+    roles:
+      primary: {name: sage, hex: "#C9DDA8", area_pct: 62}
+      secondary: {name: fern, hex: "#8FBF8B", area_pct: 20}
+      tertiary: {name: marigold, hex: "#FFB347", area_pct: 10}
+      accent: {name: birch cream, hex: "#F7F1DC", area_pct: 4}
+      detail: {name: fir bark, hex: "#35471F", area_pct: 4}
+  - id: porcelain-study
+    name: Porcelain Study
+    mood_tags: [porcelain, minimal, premium, cool]
+    temperature: cool-led with persimmon warmth
+    roles:
+      primary: {name: porcelain blue, hex: "#C9DCEB", area_pct: 63}
+      secondary: {name: celadon, hex: "#BFDCC8", area_pct: 20}
+      tertiary: {name: persimmon, hex: "#F08A5C", area_pct: 9}
+      accent: {name: ivory glaze, hex: "#FAF4E8", area_pct: 4}
+      detail: {name: indigo ink, hex: "#2B3A55", area_pct: 4}
+  - id: ember-hearth
+    name: Ember Hearth
+    mood_tags: [ember, warm, energetic]
+    temperature: warm-led 88:12
+    roles:
+      primary: {name: terracotta, hex: "#E8A583", area_pct: 58}
+      secondary: {name: clay rose, hex: "#D9807A", area_pct: 24}
+      tertiary: {name: open flame, hex: "#FF7A3D", area_pct: 9}
+      accent: {name: parchment, hex: "#F9EBD7", area_pct: 5}
+      detail: {name: charred umber, hex: "#3C221A", area_pct: 4}
+  - id: lavender-praline
+    name: Lavender Praline
+    mood_tags: [candy, cool, playful]
+    temperature: cool primary with warm anchor
+    roles:
+      primary: {name: lavender fondant, hex: "#D4C3F0", area_pct: 60}
+      secondary: {name: mint creme, hex: "#B5E3C8", area_pct: 22}
+      tertiary: {name: bubblegum, hex: "#FF8FC0", area_pct: 9}
+      accent: {name: custard, hex: "#FFF2C4", area_pct: 5}
+      detail: {name: roasted hazelnut, hex: "#4B3220", area_pct: 4}
+  - id: lemon-grove
+    name: Lemon Grove
+    mood_tags: [citrus, spring, warm, fresh]
+    temperature: warm-led 70:30
+    roles:
+      primary: {name: lemon chiffon, hex: "#F9E58A", area_pct: 60}
+      secondary: {name: young leaf, hex: "#A8D98A", area_pct: 23}
+      tertiary: {name: grapefruit, hex: "#FF7E67", area_pct: 8}
+      accent: {name: milk glass, hex: "#FBF6E3", area_pct: 5}
+      detail: {name: olive ink, hex: "#403A1C", area_pct: 4}

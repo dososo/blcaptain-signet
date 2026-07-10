@@ -1,0 +1,28 @@
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+dist/
+**/dist/ui-*/
+build/
+*.zip
+/tmp/
+*.egg-info/
+.venv/
+
+# Local agent state and non-product workspaces.
+.codex/
+**/.codex/
+~/.codex/
+private/
+**/private/
+workbench/
+**/workbench/
+audit/
+**/audit/
+tasks/
+reports/
+
+# Generated work products stay outside the public product tree.
+generated-assets/
