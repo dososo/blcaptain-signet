@@ -67,7 +67,7 @@ Most icon tools are "one template over everything," and it shows — same flavor
 
 ## The 29 styles
 
-One system; the variable is material. **Full interactive gallery** in the [online Gallery](docs/gallery.html) (open in a browser once GitHub Pages is enabled).
+One system; the variable is material. **Full interactive gallery** 👉 [online Gallery](https://dososo.github.io/blcaptain-signet/docs/gallery.html) (opens right in your browser — all 29 styles).
 
 ### Dimensional · 19 (brand marks / feature icons / high-recognition objects)
 

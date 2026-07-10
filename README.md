@@ -67,7 +67,7 @@ Signet 把「身份」这件事，变成 AI 能稳定复用的能力：把材质
 
 ## 29 个视觉样式
 
-一套系统，变化只在材质。**完整可交互画廊**见 [在线 Gallery](docs/gallery.html)（仓库开启 GitHub Pages 后可在浏览器打开）。
+一套系统，变化只在材质。**完整可交互画廊** 👉 [在线 Gallery](https://dososo.github.io/blcaptain-signet/docs/gallery.html)（浏览器直接打开，可交互查看全部 29 套）。
 
 ### 立体门面 · 19（品牌主图标 / 功能图标 / 高辨识对象）
 
